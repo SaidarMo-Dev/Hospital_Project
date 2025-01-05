@@ -1,0 +1,95 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4637EFD8-6FF5-4D5A-BC1F-92B1C0F785F2}|..\\HospitalDataAccess\\Hospital_DataAccess.csproj|c:\\visual projects\\hospital_project\\hospitaldataaccess\\clsmedicalrecordsdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4637EFD8-6FF5-4D5A-BC1F-92B1C0F785F2}|..\\HospitalDataAccess\\Hospital_DataAccess.csproj|c:\\visual projects\\hospital_project\\hospitaldataaccess\\clsemployeesdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\hospital_presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|solutionrelative:hospital_presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\hospital_presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|solutionrelative:hospital_presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "clsMedicalRecordsDataAccess.cs",
+              "DocumentMoniker": "C:\\visual projects\\Hospital_Project\\HospitalDataAccess\\clsMedicalRecordsDataAccess.cs",
+              "RelativeDocumentMoniker": "..\\HospitalDataAccess\\clsMedicalRecordsDataAccess.cs",
+              "ToolTip": "C:\\visual projects\\Hospital_Project\\HospitalDataAccess\\clsMedicalRecordsDataAccess.cs",
+              "RelativeToolTip": "..\\HospitalDataAccess\\clsMedicalRecordsDataAccess.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwN4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T11:34:42.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsEmployeesDataAccess.cs",
+              "DocumentMoniker": "C:\\visual projects\\Hospital_Project\\HospitalDataAccess\\clsEmployeesDataAccess.cs",
+              "RelativeDocumentMoniker": "..\\HospitalDataAccess\\clsEmployeesDataAccess.cs",
+              "ToolTip": "C:\\visual projects\\Hospital_Project\\HospitalDataAccess\\clsEmployeesDataAccess.cs",
+              "RelativeToolTip": "..\\HospitalDataAccess\\clsEmployeesDataAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T11:34:17.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\frmMain.cs",
+              "RelativeDocumentMoniker": "Hospital_Presentation\\frmMain.cs",
+              "ToolTip": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\frmMain.cs [Design]",
+              "RelativeToolTip": "Hospital_Presentation\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T17:02:28.659Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\frmMain.cs",
+              "RelativeDocumentMoniker": "Hospital_Presentation\\frmMain.cs",
+              "ToolTip": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\frmMain.cs",
+              "RelativeToolTip": "Hospital_Presentation\\frmMain.cs",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAjwB0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T16:03:01.818Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+C:\visual projects\Hospital_Project\HospitalDataAccess\bin\Debug\HospitalDataAccess.exe.config
+C:\visual projects\Hospital_Project\HospitalDataAccess\bin\Debug\HospitalDataAccess.exe
+C:\visual projects\Hospital_Project\HospitalDataAccess\bin\Debug\HospitalDataAccess.pdb
+C:\visual projects\Hospital_Project\HospitalDataAccess\obj\Debug\HospitalDataAccess.exe
+C:\visual projects\Hospital_Project\HospitalDataAccess\obj\Debug\HospitalDataAccess.pdb
+C:\Users\toshiba\Desktop\Hospital_Project\HospitalDataAccess\bin\Debug\HospitalDataAccess.exe.config
+C:\Users\toshiba\Desktop\Hospital_Project\HospitalDataAccess\bin\Debug\HospitalDataAccess.exe
+C:\Users\toshiba\Desktop\Hospital_Project\HospitalDataAccess\bin\Debug\HospitalDataAccess.pdb
+C:\Users\toshiba\Desktop\Hospital_Project\HospitalDataAccess\obj\Debug\Hospital_DataAccess.csproj.AssemblyReference.cache
+C:\Users\toshiba\Desktop\Hospital_Project\HospitalDataAccess\obj\Debug\Hospital_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\toshiba\Desktop\Hospital_Project\HospitalDataAccess\obj\Debug\HospitalDataAccess.exe
+C:\Users\toshiba\Desktop\Hospital_Project\HospitalDataAccess\obj\Debug\HospitalDataAccess.pdb
+C:\visual projects\Hospital_Project\HospitalDataAccess\obj\Debug\Hospital_DataAccess.csproj.AssemblyReference.cache
+C:\visual projects\Hospital_Project\HospitalDataAccess\obj\Debug\Hospital_DataAccess.csproj.CoreCompileInputs.cache
