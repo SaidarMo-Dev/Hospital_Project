@@ -28,47 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ctrlShowuserInfoCardWithFilter1 = new Hospital_Presentation.Users.Controls.ctrlShowuserInfoCardWithFilter();
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
-            // 
-            // ctrlShowuserInfoCardWithFilter1
-            // 
-            this.ctrlShowuserInfoCardWithFilter1.Location = new System.Drawing.Point(59, 116);
-            this.ctrlShowuserInfoCardWithFilter1.Name = "ctrlShowuserInfoCardWithFilter1";
-            this.ctrlShowuserInfoCardWithFilter1.Size = new System.Drawing.Size(1015, 708);
-            this.ctrlShowuserInfoCardWithFilter1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(357, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(389, 48);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "View User Informations";
-            // 
-            // frmViewUserInfo
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1133, 833);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.ctrlShowuserInfoCardWithFilter1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "frmViewUserInfo";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frmViewUserInfo";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+			this.label1 = new System.Windows.Forms.Label();
+			this.ctrlUserInfoCardWithFilterV21 = new Hospital_Presentation.Users.Controls.ctrlUserInfoCardWithFilterV2();
+			this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+			this.SuspendLayout();
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Segoe UI", 18F);
+			this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
+			this.label1.Location = new System.Drawing.Point(12, 16);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(263, 48);
+			this.label1.TabIndex = 1;
+			this.label1.Text = "Search for User";
+			// 
+			// ctrlUserInfoCardWithFilterV21
+			// 
+			this.ctrlUserInfoCardWithFilterV21.Location = new System.Drawing.Point(11, 91);
+			this.ctrlUserInfoCardWithFilterV21.Name = "ctrlUserInfoCardWithFilterV21";
+			this.ctrlUserInfoCardWithFilterV21.Size = new System.Drawing.Size(1024, 512);
+			this.ctrlUserInfoCardWithFilterV21.TabIndex = 2;
+			// 
+			// btnClose
+			// 
+			this.btnClose.BorderRadius = 5;
+			this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnClose.FillColor = System.Drawing.Color.LightSeaGreen;
+			this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.btnClose.ForeColor = System.Drawing.Color.White;
+			this.btnClose.Location = new System.Drawing.Point(838, 609);
+			this.btnClose.Name = "btnClose";
+			this.btnClose.Size = new System.Drawing.Size(180, 45);
+			this.btnClose.TabIndex = 4;
+			this.btnClose.Text = "Close";
+			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+			// 
+			// frmViewUserInfo
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(1042, 669);
+			this.Controls.Add(this.btnClose);
+			this.Controls.Add(this.ctrlUserInfoCardWithFilterV21);
+			this.Controls.Add(this.label1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+			this.Name = "frmViewUserInfo";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.Text = "frmViewUserInfo";
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 
         #endregion
-
-        private Controls.ctrlShowuserInfoCardWithFilter ctrlShowuserInfoCardWithFilter1;
         private System.Windows.Forms.Label label1;
-    }
+		private Controls.ctrlUserInfoCardWithFilterV2 ctrlUserInfoCardWithFilterV21;
+		private Guna.UI2.WinForms.Guna2Button btnClose;
+	}
 }

@@ -130,12 +130,17 @@ namespace Hospital_Presentation.Users
         private void addNewUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new frmAddUpdateUser().ShowDialog();
+            _LoadUsers();
 
         }
 
         private void editUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new frmAddUpdateUser(Convert.ToInt32(dgvListPeople.CurrentRow.Cells[0].Value)).ShowDialog();
+            new frmAddUpdateUser(
+                Convert.ToInt32(dgvListPeople.CurrentRow.Cells[0].Value))
+                .ShowDialog();
+            _LoadUsers();
+        
         }
 
         private void deleteUsernToolStripMenuItem_Click(object sender, EventArgs e)
@@ -162,5 +167,10 @@ namespace Hospital_Presentation.Users
 
             }
         }
-    }
+
+		private void ContextMenuStripUsersMenu_Opening(object sender, CancelEventArgs e)
+		{
+
+		}
+	}
 }

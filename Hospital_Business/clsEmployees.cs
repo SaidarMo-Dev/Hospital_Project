@@ -23,8 +23,7 @@ namespace Hospital_Business
         public int PersonID { set; get; }
         public string JobTitle { set; get; }
         public DateTime HireDate { set; get; }
-        //public DateTime LeaveDate { set; get; }
-        public Nullable<DateTime> LeaveDate { set; get; }
+         public DateTime? LeaveDate { set; get; }
         public int DepartementID { set; get; }
         public byte EmployeeStatus { set; get; }
         public int Salary { set; get; }
@@ -71,7 +70,9 @@ namespace Hospital_Business
             this.DepartementInfo = null;
         }
 
-        private clsEmployee(int EmployeeID, int PersonID, string JobTitle, DateTime HireDate, Nullable<DateTime> LeaveDate, int DepartementID, byte EmployeeStatus, int Salary)
+        private clsEmployee(int EmployeeID, int PersonID, string JobTitle,
+                    DateTime HireDate, Nullable<DateTime> LeaveDate,
+                    int DepartementID, byte EmployeeStatus, int Salary)
         {
             this._Mode = enMode.Update;
 
@@ -173,5 +174,10 @@ namespace Hospital_Business
 
         }
 
+        public static int EmployeesCount()
+        {
+            return clsEmployeeDataAccess.EmployeesCount();
+
+        }
     }
 }

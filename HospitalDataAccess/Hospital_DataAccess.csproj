@@ -42,23 +42,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsAppointmentsDataAccess.cs" />
+    <Compile Include="clsAppointmentDataAccess.cs" />
     <Compile Include="clsCountriesDataAccess.cs" />
     <Compile Include="clsDataAccessSettings.cs" />
     <Compile Include="clsDepartemenData.cs" />
     <Compile Include="clsDoctorsDataAccess.cs" />
     <Compile Include="clsEmployeesDataAccess.cs" />
     <Compile Include="clsMedicalRecordsDataAccess.cs" />
-    <Compile Include="clsPatientsDataAccess.cs" />
+    <Compile Include="clsPatientDataAccess.cs" />
     <Compile Include="clsPaymentsDataAccess.cs" />
     <Compile Include="clsPeopleDataAccess.cs" />
-    <Compile Include="clsPrescriptionsDataAccess.cs" />
-    <Compile Include="clsUsersDataAccess.cs" />
+    <Compile Include="clsPrescriptionDataAccess.cs" />
+    <Compile Include="clsUserDataAccess.cs" />
     <Compile Include="program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Config\appsettings.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

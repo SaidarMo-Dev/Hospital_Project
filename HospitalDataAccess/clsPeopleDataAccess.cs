@@ -398,7 +398,43 @@ namespace Hospital_DataAccessLayer
             return IsFound;
 
         }
-    
+
+        public static int PeopleCount()
+        {
+            int Count = 0;
+
+            try
+            {
+				using (var conn = new SqlConnection(clsDataAccessSettings.connectionString))
+				{
+					string Query = @" SELECT count(personId) As PeopleCount FROM people ";
+
+					using (var cmd = new SqlCommand(Query, conn))
+					{
+						conn.Open();
+
+						using (var reader = cmd.ExecuteReader())
+						{
+							if (reader.Read())
+							{
+								Count = Convert.ToInt32(reader["PeopleCount"]);
+
+							}
+						}
+
+
+					}
+
+				}
+			}
+            catch
+            {
+                Count = 0;
+            }
+
+			return Count;
+
+        }
     
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Hospital_Presentation.Users.Controls;
 
 namespace Hospital_Presentation.Users
 {
@@ -22,8 +23,13 @@ namespace Hospital_Presentation.Users
 
         private void frmShowUserInfo_Load(object sender, EventArgs e)
         {
-            ctrlUserInfoCard1.LoadData(_userID);
+            ctrlUserInfoCardV21.LoadData(_userID);
         }
 
-    }
+		private void btnClose_Click(object sender, EventArgs e)
+		{
+            this.Close();
+
+		}
+	}
 }

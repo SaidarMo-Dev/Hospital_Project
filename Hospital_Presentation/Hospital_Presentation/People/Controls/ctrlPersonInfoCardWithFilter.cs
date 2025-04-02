@@ -14,7 +14,21 @@ namespace Hospital_Presentation.People.Controls
 {
     public partial class ctrlPersonInfoCardWithFilter : UserControl
     {
-        public event EventHandler<PersonInfoEventArgs> OnPersonSelected;
+
+
+		public class PersonInfoEventArgs : EventArgs
+		{
+			public int personID { set; get; }
+
+			public PersonInfoEventArgs(int personID)
+			{
+
+				this.personID = personID;
+
+			}
+
+		}
+		public event EventHandler<PersonInfoEventArgs> OnPersonSelected;
 
 
         public ctrlPersonInfoCardWithFilter()
@@ -43,7 +57,7 @@ namespace Hospital_Presentation.People.Controls
         }
         private void _LoadData()
         {
-            ctrlPersonInfoCard1.LoadPersonInfo (Convert.ToInt16(tbSearchByPersonId .Text));
+            ctrlPersonInfoCard1.LoadPersonInfo(Convert.ToInt16(tbSearchByPersonId .Text));
 
             if (ctrlPersonInfoCard1.IsPersonFound)
             {
@@ -54,19 +68,7 @@ namespace Hospital_Presentation.People.Controls
         }
 
 
-        public class PersonInfoEventArgs : EventArgs
-        {
-            public int personID { set; get; }
-
-            public PersonInfoEventArgs(int personID)
-            {
-
-                this.personID = personID;
-
-            }
-
-        }
-
+    
         private void ctrlPersonInfoCardWithFilter_Load(object sender, EventArgs e)
         {
 
@@ -77,4 +79,8 @@ namespace Hospital_Presentation.People.Controls
             _LoadData ();
         }
     }
+
+
+
+
 }

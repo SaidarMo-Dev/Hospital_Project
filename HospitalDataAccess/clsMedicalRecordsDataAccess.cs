@@ -323,5 +323,52 @@ namespace Hospital_DataAccessLayer
             return IsFound;
 
         }
+    
+        public static DataTable PatientRecords(int patientID)
+        {
+
+			DataTable dtPatientRecords = new DataTable();
+
+			try
+			{
+
+				using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString))
+				{
+					connection.Open();
+
+					
+
+					using (SqlCommand command = new SqlCommand("SP_GetPatientMedicalRecords", connection))
+					{
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("@PatientId", patientID);
+
+						using (SqlDataReader reader = command.ExecuteReader())
+						{
+
+							if (reader.HasRows)
+							{
+
+								dtPatientRecords.Load(reader);
+
+							}
+						}
+
+
+
+					}
+				}
+			}
+			catch
+			{
+
+
+			}
+
+			return dtPatientRecords;
+		}
+    
+
     }
 }

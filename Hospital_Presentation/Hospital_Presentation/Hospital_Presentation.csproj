@@ -65,6 +65,12 @@
     <Compile Include="Appointments\frmManageAppointments.Designer.cs">
       <DependentUpon>frmManageAppointments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Appointments\frmShowAppointmentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments\frmShowAppointmentInfo.Designer.cs">
+      <DependentUpon>frmShowAppointmentInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\frmDasboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,12 @@
     <Compile Include="Employees\frmViewEmployeeInfo.Designer.cs">
       <DependentUpon>frmViewEmployeeInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +171,18 @@
     <Compile Include="GlobalClasses\Format.cs" />
     <Compile Include="GlobalClasses\Global.cs" />
     <Compile Include="GlobalClasses\Util.cs" />
+    <Compile Include="MedicalRecords\frmManageMedicalRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalRecords\frmManageMedicalRecords.Designer.cs">
+      <DependentUpon>frmManageMedicalRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalRecords\frmMedicalRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalRecords\frmMedicalRecord.Designer.cs">
+      <DependentUpon>frmMedicalRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Patients\Controls\ctrlPatientInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -237,8 +261,25 @@
     <Compile Include="People\frmViewPersonInfo.Designer.cs">
       <DependentUpon>frmViewPersonInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prescriptions\frmAddPrescriptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prescriptions\frmAddPrescriptions.Designer.cs">
+      <DependentUpon>frmAddPrescriptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prescriptions\frmManagePrescriptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prescriptions\frmManagePrescriptions.Designer.cs">
+      <DependentUpon>frmManagePrescriptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Users\Controls\ctrlShowuserInfoCardWithFilter.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -251,11 +292,29 @@
     <Compile Include="Users\Controls\ctrlUserInfoCard.Designer.cs">
       <DependentUpon>ctrlUserInfoCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Users\frmAdUpdateUser.cs">
+    <Compile Include="Users\Controls\ctrlUserInfoCardWithFilterV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Controls\ctrlUserInfoCardWithFilterV2.Designer.cs">
+      <DependentUpon>ctrlUserInfoCardWithFilterV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Controls\frmUserInfoCardV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Controls\frmUserInfoCardV2.Designer.cs">
+      <DependentUpon>frmUserInfoCardV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmAddUpdateUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users\frmAdUpdateUser.Designer.cs">
-      <DependentUpon>frmAdUpdateUser.cs</DependentUpon>
+    <Compile Include="Users\frmAddUpdateUser.Designer.cs">
+      <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\frmManageUsers.cs">
       <SubType>Form</SubType>
@@ -280,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Appointments\frmManageAppointments.resx">
       <DependentUpon>frmManageAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\frmShowAppointmentInfo.resx">
+      <DependentUpon>frmShowAppointmentInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\frmDasboard.resx">
       <DependentUpon>frmDasboard.cs</DependentUpon>
@@ -323,8 +385,17 @@
     <EmbeddedResource Include="Employees\frmViewEmployeeInfo.resx">
       <DependentUpon>frmViewEmployeeInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalRecords\frmManageMedicalRecords.resx">
+      <DependentUpon>frmManageMedicalRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalRecords\frmMedicalRecord.resx">
+      <DependentUpon>frmMedicalRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patients\Controls\ctrlPatientInfo.resx">
       <DependentUpon>ctrlPatientInfo.cs</DependentUpon>
@@ -365,24 +436,34 @@
     <EmbeddedResource Include="People\frmViewPersonInfo.resx">
       <DependentUpon>frmViewPersonInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Prescriptions\frmAddPrescriptions.resx">
+      <DependentUpon>frmAddPrescriptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prescriptions\frmManagePrescriptions.resx">
+      <DependentUpon>frmManagePrescriptions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Users\Controls\ctrlShowuserInfoCardWithFilter.resx">
       <DependentUpon>ctrlShowuserInfoCardWithFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Controls\ctrlUserInfoCard.resx">
       <DependentUpon>ctrlUserInfoCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users\frmAdUpdateUser.resx">
-      <DependentUpon>frmAdUpdateUser.cs</DependentUpon>
+    <EmbeddedResource Include="Users\Controls\ctrlUserInfoCardWithFilterV2.resx">
+      <DependentUpon>ctrlUserInfoCardWithFilterV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Controls\frmUserInfoCardV2.resx">
+      <DependentUpon>frmUserInfoCardV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmAddUpdateUser.resx">
+      <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\frmManageUsers.resx">
       <DependentUpon>frmManageUsers.cs</DependentUpon>
@@ -499,6 +580,65 @@
   <ItemGroup>
     <None Include="Resources\cancelRed.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\cancelRed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patients_white1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctors_blue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employeesBlue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People_Blue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddBlue21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People_Blue2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-username-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-down-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hide-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hide-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hide-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconshowPassword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconHidePassword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employeesBlue2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personnameColored1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctors_blue2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

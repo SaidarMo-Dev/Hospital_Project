@@ -66,7 +66,7 @@ namespace Hospital_Business
             string AssuranceNumber = " ";
 
 
-            if (clsPatientsDataAccess.GetPatientsInfoByID(PatientID, ref PersonID, ref BloodType, ref AssuranceNumber))
+            if (clsPatientDataAccess.GetPatientsInfoByID(PatientID, ref PersonID, ref BloodType, ref AssuranceNumber))
             {
                 return new clsPatient(PatientID, PersonID, BloodType, AssuranceNumber);
 
@@ -78,14 +78,14 @@ namespace Hospital_Business
 
         private bool _AddNewPatient()
         {
-            this.PatientID = clsPatientsDataAccess.AddNewPatients(this.PersonID, this.BloodType, this.AssuranceNumber);
+            this.PatientID = clsPatientDataAccess.AddNewPatients(this.PersonID, this.BloodType, this.AssuranceNumber);
 
             return (this.PatientID != -1);
 
         }
         private bool _UpdatePatient()
         {
-            return clsPatientsDataAccess.UpdatePatients(this.PatientID, this.PersonID, this.BloodType, this.AssuranceNumber);
+            return clsPatientDataAccess.UpdatePatients(this.PatientID, this.PersonID, this.BloodType, this.AssuranceNumber);
         }
 
         public bool Save()
@@ -115,19 +115,23 @@ namespace Hospital_Business
         }
         public static bool DeletePatient(int PatientID)
         {
-            return clsPatientsDataAccess.DeletePatients(PatientID);
+            return clsPatientDataAccess.DeletePatients(PatientID);
 
         }
         public static DataTable GetListPatients()
         {
 
-            return clsPatientsDataAccess.GetListPatients();
+            return clsPatientDataAccess.GetListPatients();
         }
 
         public static bool IsPatientsExisteByID(int PatientID)
         {
-            return clsPatientsDataAccess.IsPatientsExisteByID(PatientID);
+            return clsPatientDataAccess.IsPatientsExisteByID(PatientID);
 
+        }
+        public static int PatientsCount()
+        {
+            return clsPatientDataAccess.PatientsCount();
         }
 
     }

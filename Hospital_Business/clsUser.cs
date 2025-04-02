@@ -70,7 +70,7 @@ namespace Hospital_Business
             bool IsActive = false;
 
 
-            if (clsUsersDataAccess.GetUsersInfoByID(UserID, ref PersonID, ref Username, ref Password, ref IsActive))
+            if (clsUserDataAccess.GetUserInfoByID(UserID, ref PersonID, ref Username, ref Password, ref IsActive))
             {
                 return new clsUser(UserID, PersonID, Username, Password, IsActive);
 
@@ -80,16 +80,35 @@ namespace Hospital_Business
 
         }
 
-        private bool _AddNewUser()
+		public static clsUser FindByUsernameAndPassword(string Username, string Password)
+		{
+			
+            int UserID = -1;
+			int PersonID = -1;
+			bool IsActive = false;
+
+
+			if (clsUserDataAccess.GetUserInfoByUsernameAndPassword(Username, Password,ref UserID, ref PersonID, ref IsActive))
+			{
+				return new clsUser(UserID, PersonID, Username, Password, IsActive);
+
+			}
+
+			return null;
+
+		}
+
+
+		private bool _AddNewUser()
         {
-            this.UserID = clsUsersDataAccess.AddNewUsers(this.PersonID, this.Username, this.Password, this.IsActive);
+            this.UserID = clsUserDataAccess.AddNewUser(this.PersonID, this.Username, this.Password, this.IsActive);
 
             return (this.UserID != -1);
 
         }
         private bool _UpdateUser()
         {
-            return clsUsersDataAccess.UpdateUsers(this.UserID, this.PersonID, this.Username, this.Password, this.IsActive);
+            return clsUserDataAccess.UpdateUser(this.UserID, this.PersonID, this.Username, this.Password, this.IsActive);
         }
 
         public bool Save()
@@ -119,20 +138,32 @@ namespace Hospital_Business
         }
         public static bool DeleteUser(int UserID)
         {
-            return clsUsersDataAccess.DeleteUsers(UserID);
+            return clsUserDataAccess.DeleteUser(UserID);
 
         }
         public static DataTable GetListUsers()
         {
 
-            return clsUsersDataAccess.GetListUsers();
+            return clsUserDataAccess.GetListUsers();
         }
 
         public static bool IsUserExisteByID(int UserID)
         {
-            return clsUsersDataAccess.IsUsersExisteByID(UserID);
+            return clsUserDataAccess.IsUserExisteByID(UserID);
 
         }
 
+        public static int UsersCount()
+        {
+            return clsUserDataAccess.UsersCount();
+
+        }
+
+        public static bool IsPersonHasUser(int personId)
+        {
+            return clsUserDataAccess.IsPersonHasUser(personId);
+
+        }
+    
     }
 }

@@ -178,5 +178,10 @@ namespace Hospital_Business
 
         }
 
+        public static int PeopleCount()
+        {
+            return clsPeopleDataAccess.PeopleCount();
+
+        }
     }
 }

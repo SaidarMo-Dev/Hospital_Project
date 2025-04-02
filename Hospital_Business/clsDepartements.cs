@@ -27,7 +27,7 @@ namespace Hospital_Business
 
         }
 
-        public clsDepartement (int ID , string DepartementName)
+        private clsDepartement (int ID , string DepartementName)
         {
             this.DepartementID = ID;
             this.DepartementName = DepartementName;
@@ -77,7 +77,7 @@ namespace Hospital_Business
         {
             string Name = "";
 
-            if (clsDepartemenData.GetDepartementInfoByID (DepartementID, ref Name))
+            if (clsDepartemenData.GetDepartementInfoByID(DepartementID, ref Name))
             {
                 return new clsDepartement(DepartementID, Name);
 

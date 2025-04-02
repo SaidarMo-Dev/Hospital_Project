@@ -25,7 +25,7 @@ namespace Hospital_Presentation.Employees
         private void _CustomazeDesign()
         {
            // txtSearchValue.Visible = false;
-           // cbSearchBy.SelectedIndex = 0;
+            cbSortBy.SelectedIndex = 0;
 
         }
 
@@ -37,11 +37,14 @@ namespace Hospital_Presentation.Employees
             _dtEmployees = clsEmployee.GetListEmployees();
 
             dgvListEmployees.DataSource = _dtEmployees;
-
             lblEmployeesCountCount.Text = dgvListEmployees.RowCount.ToString();
+
+            tbSearchForEmployee.Enabled = false;
 
             if (dgvListEmployees.RowCount > 0)
             {
+                tbSearchForEmployee.Enabled = true;
+
                 dgvListEmployees.Columns[0].HeaderText = "Employee ID";
                 dgvListEmployees.Columns[0].Width = 100;
 
@@ -83,35 +86,32 @@ namespace Hospital_Presentation.Employees
             switch (cbSortBy.SelectedItem.ToString())
             {
 
-                case "Employee ID":
+                case "Employee Id":
                     _dtEmployees.DefaultView.Sort = "EmployeeID";
                     break;
 
-                case "Person ID":
-                    _dtEmployees.DefaultView.Sort = "EmployeeID";
-                    break;
 
                 case "Hire Date":
                     _dtEmployees.DefaultView.Sort = "HireDate";
                     break;
 
-                case "Leave Date":
-                    _dtEmployees.DefaultView.Sort = "LeaveDate";
-                    break;
+				case "Full Name":
+					_dtEmployees.DefaultView.Sort = "Full_Name";
+					break;
 
-                case "Salary":
+
+				case "Salary":
                     _dtEmployees.DefaultView.Sort = "Salary";
                     break;
 
-
-
-            }
-        }
-
-
+                default:
+					_dtEmployees.DefaultView.Sort = "EmployeeID";
+					break;
 
 
 
+			}
+		}
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -127,7 +127,9 @@ namespace Hospital_Presentation.Employees
 
         private void cbSortBy_SelectedIndexChanged(object sender, EventArgs e)
         {
-            _Sort();    
+            if (dgvListEmployees.RowCount > 0)
+                _Sort();
+            
         }
 
         private void deletePersonToolStripMenuItem_Click(object sender, EventArgs e)
@@ -168,5 +170,28 @@ namespace Hospital_Presentation.Employees
                 
                 .ShowDialog();
         }
-    }
+
+		private void tbSearchForEmployee_TextChanged(object sender, EventArgs e)
+		{
+            if (!string.IsNullOrEmpty(tbSearchForEmployee.Text))
+            {
+                _dtEmployees.DefaultView.RowFilter = $"Full_Name Like '{tbSearchForEmployee.Text.Trim()}%'";
+            }
+            else
+                _dtEmployees.DefaultView.RowFilter = "";
+
+		}
+
+		private void showPersonInfoToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+            new frmShowEmployeeInfo
+                (Convert.ToInt16(dgvListEmployees.CurrentRow.Cells[0].Value))
+				.ShowDialog();
+		}
+
+		private void ContextMenuStripPeopleMenu_Opening(object sender, CancelEventArgs e)
+		{
+
+		}
+	}
 }

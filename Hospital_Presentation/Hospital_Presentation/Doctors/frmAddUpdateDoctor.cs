@@ -41,6 +41,8 @@ namespace Hospital_Presentation.Doctors
 
         private void _resetDefaultValues()
         {
+            btnNext.Enabled = false;
+
             if (_Mode == enMode.AddNew)
             {
                 _doctor = new clsDoctor();
@@ -195,5 +197,20 @@ namespace Hospital_Presentation.Doctors
                 e.Handled = true;   
             }
         }
-    }
+
+		private void btnClose_Click(object sender, EventArgs e)
+		{
+            this.Close();
+		}
+
+		private void ctrlPersonInfoCardWithFilter1_OnPersonSelected(object sender, People.Controls.ctrlPersonInfoCardWithFilter.PersonInfoEventArgs e)
+		{
+            btnNext.Enabled = true;
+		}
+
+		private void txtLiceseNumber_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

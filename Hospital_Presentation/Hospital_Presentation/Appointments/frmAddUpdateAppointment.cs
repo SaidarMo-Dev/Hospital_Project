@@ -84,7 +84,10 @@ namespace Hospital_Presentation.Appointments
             ctrlShowDoctorInfo1.LoadData(_AppointmentInfo.DoctorID);
 
         
-            dateTimePickerAppointmentDate.Value = _AppointmentInfo.AppointmentDate;
+            if (_Mode == enMode.Update)
+				dateTimePickerAppointmentDate.MinDate = _AppointmentInfo.AppointmentDate;
+
+			dateTimePickerAppointmentDate.Value = _AppointmentInfo.AppointmentDate;
             txtNotes .Text = _AppointmentInfo.Notes;
 
 
@@ -180,7 +183,7 @@ namespace Hospital_Presentation.Appointments
 
             if (_Mode == enMode.Update)
             {
-                _loadData();
+               _loadData();
 
             }
 

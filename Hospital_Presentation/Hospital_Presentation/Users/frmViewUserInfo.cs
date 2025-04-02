@@ -16,5 +16,11 @@ namespace Hospital_Presentation.Users
         {
             InitializeComponent();
         }
-    }
+
+		private void btnClose_Click(object sender, EventArgs e)
+		{
+            this.Close();
+
+		}
+	}
 }

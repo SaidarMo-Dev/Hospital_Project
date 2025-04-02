@@ -28,7 +28,7 @@ namespace Hospital_DataAccessLayer
                 {
                     connection.Open();
 
-                    string query = @" Select * From Departements Wehre DepartementID = @DepartementID";
+                    string query = @" Select * From Departements WHERE DepartementID = @DepartementID";
 
 
                     using (SqlCommand command = new SqlCommand(query, connection))

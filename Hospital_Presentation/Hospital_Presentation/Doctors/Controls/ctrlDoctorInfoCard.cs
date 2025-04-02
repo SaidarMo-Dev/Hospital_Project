@@ -50,20 +50,20 @@ namespace Hospital_Presentation.Doctors.Controls
             if (dgvDoctorAppointments.RowCount > 0)
             {
                 dgvDoctorAppointments.Columns[0].HeaderText = "Appointment ID";
-                dgvDoctorAppointments.Columns[0].Width = 90;
+                dgvDoctorAppointments.Columns[0].Width = 120;
 
 
                 dgvDoctorAppointments.Columns[1].HeaderText = "Patient ID";
-                dgvDoctorAppointments.Columns[1].Width = 90;
+                dgvDoctorAppointments.Columns[1].Width = 110;
 
                 dgvDoctorAppointments.Columns[2].HeaderText = "Appointment Date";
-                dgvDoctorAppointments.Columns[2].Width = 110;
+                dgvDoctorAppointments.Columns[2].Width = 220;
 
                 dgvDoctorAppointments.Columns[3].HeaderText = "Notes";
-                dgvDoctorAppointments.Columns[3].Width = 140;
+                dgvDoctorAppointments.Columns[3].Width = 220;
 
                 dgvDoctorAppointments.Columns[4].HeaderText = "MedicalRecord ID";
-                dgvDoctorAppointments.Columns[4].Width = 90;
+                dgvDoctorAppointments.Columns[4].Width = 110;
 
 
             }
@@ -82,29 +82,26 @@ namespace Hospital_Presentation.Doctors.Controls
             if (dgvDoctorAppointments.RowCount > 0)
             {
                 dgvDoctorAppointments.Columns[0].HeaderText = "Appointment ID";
-                dgvDoctorAppointments.Columns[0].Width = 90;
+                dgvDoctorAppointments.Columns[0].Width = 130;
 
 
                 dgvDoctorAppointments.Columns[1].HeaderText = "Patient ID";
-                dgvDoctorAppointments.Columns[1].Width = 90;
+                dgvDoctorAppointments.Columns[1].Width = 110;
 
                 dgvDoctorAppointments.Columns[2].HeaderText = "Appointment Date";
-                dgvDoctorAppointments.Columns[2].Width = 110;
+                dgvDoctorAppointments.Columns[2].Width = 220;
 
                 dgvDoctorAppointments.Columns[3].HeaderText = "Notes";
-                dgvDoctorAppointments.Columns[3].Width = 140;
+                dgvDoctorAppointments.Columns[3].Width = 220;
 
                 dgvDoctorAppointments.Columns[4].HeaderText = "MedicalRecord ID";
-                dgvDoctorAppointments.Columns[4].Width = 90;
+                dgvDoctorAppointments.Columns[4].Width = 140;
 
 
             }
 
 
         }
-
-      
-
         private void btnCompletedAppointments_Click(object sender, EventArgs e)
         {
             _LoadCompltedAppointemets();

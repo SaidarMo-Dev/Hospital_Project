@@ -24,7 +24,6 @@ namespace Hospital_Presentation.People
         private int _personID;
 
 
-
         public frmAddUpdatePerson()
         {
             InitializeComponent();
@@ -98,8 +97,9 @@ namespace Hospital_Presentation.People
             txtEmail.Text = _personInfo.Email;
             txtPhoneNumber.Text = _personInfo.Phone;
             cbGendor.SelectedIndex = _personInfo.Gendor;
-            cbNationality.SelectedIndex = _personInfo.NationalityCountryID;
+            cbNationality.SelectedItem = _personInfo.CountryInfo.CountryName;
 
+            
             if (_personInfo.ImagePath == "")
             {
                 picturePersonImage.Image = Properties.Resources.Male;
@@ -268,14 +268,23 @@ namespace Hospital_Presentation.People
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure you want to save this person ?", "Confirm",
-
-                  MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+            if (this.ValidateChildren())
             {
-                _CollectAndSavePersonInfo();
+				if (MessageBox.Show("Are you sure you want to save this person ?",
+                    "Confirm",MessageBoxButtons.OKCancel, MessageBoxIcon.Information) 
+                    == DialogResult.OK)
+				{
+					_CollectAndSavePersonInfo();
 
-            }
-        }
+				}
+			}
+            else
+            {
+                MessageBox.Show(" Something Wrong! Put the Mouse on the red icon to see the error",
+					"Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+
+		}
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -290,7 +299,7 @@ namespace Hospital_Presentation.People
                 ErrorPoviderValidations.SetError(txtFirstName, "This Field is required!");
             }
             else
-                ErrorPoviderValidations.SetError(txtFirstName, "");
+                ErrorPoviderValidations.SetError(txtFirstName, null);
 
         }
 
@@ -299,10 +308,12 @@ namespace Hospital_Presentation.People
             if (string.IsNullOrEmpty(txtLastName.Text.Trim()))
             {
                 ErrorPoviderValidations.SetError(txtLastName, "This Field is required!");
+               
             }
             else
-                ErrorPoviderValidations.SetError(txtLastName, "");
-
+				ErrorPoviderValidations.SetError(txtLastName, null);
+			
+             
         }
 
         private void txtDateOfBirth_Validating(object sender, CancelEventArgs e)
@@ -311,16 +322,15 @@ namespace Hospital_Presentation.People
             if (string.IsNullOrEmpty(txtDateOfBirth.Text.Trim()))
             {
                 ErrorPoviderValidations.SetError(txtDateOfBirth, "This field is required!");
-
+               
             }
             else if (!clsValidating.ValidateDateStringFormat(txtDateOfBirth.Text.Trim()))
             {
                 ErrorPoviderValidations.SetError(txtDateOfBirth, "Please Respect the suggested format");
             }
             else
-            {
                 ErrorPoviderValidations.SetError(txtDateOfBirth, "");
-            }
+              
 
         }
 
@@ -328,18 +338,22 @@ namespace Hospital_Presentation.People
         {
             if (string.IsNullOrEmpty(txtEmail.Text.Trim()))
             {
-                ErrorPoviderValidations.SetError(txtEmail, "This Field is required!");
+			
+				ErrorPoviderValidations.SetError(txtEmail, "This Field is required!");
             }
             else if (!clsValidating.ValidateEmail(txtEmail.Text.Trim()))
             {
                 ErrorPoviderValidations.SetError(txtEmail, "Please Enter a valide email");
+				
+			}
+			else
+            {
+				
+				ErrorPoviderValidations.SetError(txtEmail, "");
 
-            }
-            else
-                ErrorPoviderValidations.SetError(txtEmail, "");
+			}
 
-
-        }
+		}
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
@@ -350,5 +364,29 @@ namespace Hospital_Presentation.People
         {
 
         }
-    }
+
+		private void txtAddress_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void txtLastName_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnClose_Click_1(object sender, EventArgs e)
+		{
+            this.Close();
+		}
+
+		private void label2_Click(object sender, EventArgs e)
+		{
+
+		}
+
+        private void linkRemovePersonImage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+        }
+	}
 }

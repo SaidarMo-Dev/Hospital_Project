@@ -171,6 +171,8 @@ namespace Hospital_Presentation.Doctors
 
         private void frmManageDoctors_Load(object sender, EventArgs e)
         {
+            cbSortBy.SelectedIndex = 0;
+
             LoadDoctors();
 
         }

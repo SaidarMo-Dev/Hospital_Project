@@ -12,9 +12,26 @@ namespace Hospital_Presentation.Employees
 {
     public partial class frmShowEmployeeInfo : Form
     {
-        public frmShowEmployeeInfo()
+        private int _eemployeeId;
+        public frmShowEmployeeInfo(int EmployeeId)
         {
+            _eemployeeId = EmployeeId;
             InitializeComponent();
         }
-    }
+
+		private void ctrlEmployeeInfo1_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void frmShowEmployeeInfo_Load(object sender, EventArgs e)
+		{
+            ctrlEmployeeInfo1.LoadData(_eemployeeId);
+		}
+
+		private void guna2Button1_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
+	}
 }

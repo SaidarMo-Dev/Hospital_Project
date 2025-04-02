@@ -282,5 +282,44 @@ namespace Hospital_DataAccessLayer
             return IsFound;
 
         }
-    }
+
+		public static int DoctorsCount()
+		{
+			int Count = 0;
+
+			try
+			{
+				using (var conn = new SqlConnection(clsDataAccessSettings.connectionString))
+				{
+					string Query = @" SELECT count(*) AS DoctorsCount FROM Doctors ";
+
+					using (var cmd = new SqlCommand(Query, conn))
+					{
+						conn.Open();
+
+						using (var reader = cmd.ExecuteReader())
+						{
+							if (reader.Read())
+							{
+								Count = Convert.ToInt32(reader["DoctorsCount"]);
+
+							}
+						}
+
+
+					}
+
+				}
+			}
+			catch
+			{
+				Count = 0;
+			}
+
+			return Count;
+
+		}
+
+
+	}
 }

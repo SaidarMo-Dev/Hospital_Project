@@ -28,56 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ctrlEmployeeInfo1 = new Hospital_Presentation.Employees.Controls.ctrlEmployeeInfo();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
-            // 
-            // ctrlEmployeeInfo1
-            // 
-            this.ctrlEmployeeInfo1.Location = new System.Drawing.Point(3, 80);
-            this.ctrlEmployeeInfo1.Name = "ctrlEmployeeInfo1";
-            this.ctrlEmployeeInfo1.Size = new System.Drawing.Size(1034, 538);
-            this.ctrlEmployeeInfo1.TabIndex = 0;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderRadius = 7;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(851, 630);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(184, 49);
-            this.guna2Button1.TabIndex = 35;
-            this.guna2Button1.Text = "Close";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(404, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(297, 40);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "Employee Details";
-            // 
-            // frmShowEmployeeInfo
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1086, 688);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.ctrlEmployeeInfo1);
-            this.Name = "frmShowEmployeeInfo";
-            this.Text = "frmShowEmployeeInfo";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+			this.ctrlEmployeeInfo1 = new Hospital_Presentation.Employees.Controls.ctrlEmployeeInfo();
+			this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+			this.label1 = new System.Windows.Forms.Label();
+			this.SuspendLayout();
+			// 
+			// ctrlEmployeeInfo1
+			// 
+			this.ctrlEmployeeInfo1.Location = new System.Drawing.Point(12, 80);
+			this.ctrlEmployeeInfo1.Name = "ctrlEmployeeInfo1";
+			this.ctrlEmployeeInfo1.Size = new System.Drawing.Size(977, 538);
+			this.ctrlEmployeeInfo1.TabIndex = 0;
+			this.ctrlEmployeeInfo1.Load += new System.EventHandler(this.ctrlEmployeeInfo1_Load);
+			// 
+			// guna2Button1
+			// 
+			this.guna2Button1.BorderRadius = 7;
+			this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.guna2Button1.ForeColor = System.Drawing.Color.White;
+			this.guna2Button1.Location = new System.Drawing.Point(792, 624);
+			this.guna2Button1.Name = "guna2Button1";
+			this.guna2Button1.Size = new System.Drawing.Size(184, 49);
+			this.guna2Button1.TabIndex = 35;
+			this.guna2Button1.Text = "Close";
+			this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.label1.Location = new System.Drawing.Point(342, 27);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(297, 40);
+			this.label1.TabIndex = 36;
+			this.label1.Text = "Employee Details";
+			// 
+			// frmShowEmployeeInfo
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(997, 682);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.guna2Button1);
+			this.Controls.Add(this.ctrlEmployeeInfo1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+			this.Name = "frmShowEmployeeInfo";
+			this.Text = "frmShowEmployeeInfo";
+			this.Load += new System.EventHandler(this.frmShowEmployeeInfo_Load);
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 

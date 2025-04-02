@@ -16,5 +16,15 @@ namespace Hospital_Presentation.Doctors
         {
             InitializeComponent();
         }
-    }
+
+		private void btnClose_Click(object sender, EventArgs e)
+		{
+            this.Close();
+		}
+
+		private void ctrlShowDoctorInfoCardWithFilter_1_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

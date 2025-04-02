@@ -45,11 +45,19 @@ namespace Hospital_DataAccessLayer
                                 PersonID = (int)reader["PersonID"];
                                 JobTitle = (string)(reader["JobTitle"] == System.DBNull.Value ? "" : reader["JobTitle"]);
                                 HireDate = (DateTime)reader["HireDate"];
-                                LeaveDate = (DateTime)(reader["LeaveDate"] == System.DBNull.Value ? null : reader["LeaveDate"]);
-                                Departement = (int)reader["DepartementID"];
+								if ((reader["LeaveDate"] == DBNull.Value))
+								{
+									LeaveDate = null;
+								}
+								else
+								{
+									LeaveDate = (DateTime)reader["LeaveDate"];
+								}
+								Departement = (int)reader["DepartementID"];
                                 EmployeeStatus = (byte)reader["EmployeeStatus"];
                                 Salary = (int)reader["Salary"];
 
+                                
                             }
                         }
 
@@ -305,5 +313,44 @@ namespace Hospital_DataAccessLayer
             return IsFound;
 
         }
-    }
+		public static int EmployeesCount()
+		{
+			int Count = 0;
+
+			try
+			{
+				using (var conn = new SqlConnection(clsDataAccessSettings.connectionString))
+				{
+					string Query = @" SELECT count(*) AS EmployeesCount FROM Employees ";
+
+					using (var cmd = new SqlCommand(Query, conn))
+					{
+						conn.Open();
+
+						using (var reader = cmd.ExecuteReader())
+						{
+							if (reader.Read())
+							{
+								Count = Convert.ToInt32(reader["EmployeesCount"]);
+
+							}
+						}
+
+
+					}
+
+				}
+			}
+			catch
+			{
+				Count = 0;
+			}
+
+			return Count;
+
+		}
+
+
+
+	}
 }

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.IO;
 using Hospital_DataAccessLayer;
+using System.Linq.Expressions;
 
 
 namespace Hospital_Business
@@ -31,11 +32,33 @@ namespace Hospital_Business
         public DateTime CreatedDate { set; get; }
         public int CreatedByUserID { set; get; }
 
+        public string StatusString
+        {
+            get
+            {
+                switch (AppointmentStatus)
+                {
+                    case 1:
+                        return "New";
+
+                    case 2:
+                        return "Canceled";
+
+
+                    case 3:
+                        return "Completed";
+
+                    default:
+                        return "Unknown";
+
+                }
+            }
+        }
 
         public clsDoctor DoctorInfo { set; get; }
         public clsUser UserInfo { set; get; }
         public clsPatient PatientInfo { set; get; }
-        public clsMedicalRecords MedicalRecordInfo { set; get; }
+        public clsMedicalRecord MedicalRecordInfo { set; get; }
         public clsPayments PaymentInfo { set; get; }
 
 
@@ -50,7 +73,7 @@ namespace Hospital_Business
             this.AppointmentDate = DateTime.Now;
             this.AppointmentStatus = 0;
             this.LastStatusDate = DateTime.Now;
-            this.Notes = " ";
+            this.Notes = "";
             this.MedicalRecordID = -1;
             this.PaymentID = -1;
             this.CreatedDate = DateTime.Now;
@@ -85,7 +108,7 @@ namespace Hospital_Business
             this.DoctorInfo = clsDoctor.FindByID(DoctorID);
             this.UserInfo = clsUser.FindByID(CreatedByUserID);
             this.PatientInfo = clsPatient.FindByID(PatientID);
-            this.MedicalRecordInfo = clsMedicalRecords.FindByID(MedicalRecordID);
+            this.MedicalRecordInfo = clsMedicalRecord.FindByID(MedicalRecordID);
             this.PaymentInfo = clsPayments.FindByID(PaymentID);
 
 
@@ -99,14 +122,14 @@ namespace Hospital_Business
             DateTime AppointmentDate = DateTime.Now;
             byte AppointmentStatus = 0;
             DateTime LastStatusDate = DateTime.Now;
-            string Notes = " ";
+            string Notes = "";
             int MedicalRecordID = -1;
             int PaymentID = -1;
             DateTime CreatedDate = DateTime.Now;
             int CreatedByUserID = -1;
 
 
-            if (clsAppointmentsDataAccess.GetAppointmentsInfoByID(AppointmentID, ref PatientID, ref DoctorID, ref AppointmentDate, ref AppointmentStatus, ref LastStatusDate, ref Notes, ref MedicalRecordID, ref PaymentID, ref CreatedDate, ref CreatedByUserID))
+            if (clsAppointmentDataAccess.GetAppointmentsInfoByID(AppointmentID, ref PatientID, ref DoctorID, ref AppointmentDate, ref AppointmentStatus, ref LastStatusDate, ref Notes, ref MedicalRecordID, ref PaymentID, ref CreatedDate, ref CreatedByUserID))
             {
                 return new clsAppointment(AppointmentID, PatientID, DoctorID, AppointmentDate, AppointmentStatus, LastStatusDate, Notes, MedicalRecordID, PaymentID, CreatedDate, CreatedByUserID);
 
@@ -118,14 +141,14 @@ namespace Hospital_Business
 
         private bool _AddNewAppointments()
         {
-            this.AppointmentID = clsAppointmentsDataAccess.AddNewAppointments(this.PatientID, this.DoctorID, this.AppointmentDate, this.AppointmentStatus, this.LastStatusDate, this.Notes, this.MedicalRecordID, this.PaymentID, this.CreatedDate, this.CreatedByUserID);
+            this.AppointmentID = clsAppointmentDataAccess.AddNewAppointments(this.PatientID, this.DoctorID, this.AppointmentDate, this.AppointmentStatus, this.LastStatusDate, this.Notes, this.MedicalRecordID, this.PaymentID, this.CreatedDate, this.CreatedByUserID);
 
             return (this.AppointmentID != -1);
 
         }
         private bool _UpdateAppointments()
         {
-            return clsAppointmentsDataAccess.UpdateAppointments(this.AppointmentID, this.PatientID, this.DoctorID, this.AppointmentDate, this.AppointmentStatus, this.LastStatusDate, this.Notes, this.MedicalRecordID, this.PaymentID, this.CreatedDate, this.CreatedByUserID);
+            return clsAppointmentDataAccess.UpdateAppointments(this.AppointmentID, this.PatientID, this.DoctorID, this.AppointmentDate, this.AppointmentStatus, this.LastStatusDate, this.Notes, this.MedicalRecordID, this.PaymentID, this.CreatedDate, this.CreatedByUserID);
         }
 
         public bool Save()
@@ -155,20 +178,41 @@ namespace Hospital_Business
         }
         public static bool DeleteAppointments(int AppointmentID)
         {
-            return clsAppointmentsDataAccess.DeleteAppointments(AppointmentID);
+            return clsAppointmentDataAccess.DeleteAppointments(AppointmentID);
 
         }
         public static DataTable GetListAppointments()
         {
 
-            return clsAppointmentsDataAccess.GetListAppointments();
+            return clsAppointmentDataAccess.GetListAppointments();
         }
 
         public static bool IsAppointmentsExisteByID(int AppointmentID)
         {
-            return clsAppointmentsDataAccess.IsAppointmentsExisteByID(AppointmentID);
+            return clsAppointmentDataAccess.IsAppointmentsExisteByID(AppointmentID);
 
         }
 
-    }
+        public bool SetComplete()
+        {
+            return clsAppointmentDataAccess.UpdateStatus(this.AppointmentID, 3);
+        }
+
+        public bool Cancel()
+        {
+            return clsAppointmentDataAccess.UpdateStatus(this.AppointmentID, 2);
+
+        }
+    
+        public bool HasMedicalRecord()
+        {
+            return clsAppointmentDataAccess.HasMedicalRecord(this.AppointmentID);
+        }
+
+		public bool HasPrescriptions()
+		{
+            return clsPrescriptionDataAccess.IsMedicalRecordHasPrescriptions(this.MedicalRecordID);
+		}
+
+	}
 }

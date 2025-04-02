@@ -31,8 +31,38 @@ namespace Hospital_Presentation.Employees.Controls
             get { return _employeeInfo; }
         }
 
+		private void _ShowEmployeeImage()
+		{
+			try
+			{
+				if (string.IsNullOrEmpty(_employeeInfo.PersonInfo.ImagePath))
+				{
+					if (_employeeInfo.PersonInfo.Gendor == 0)
+						pictureEmployeeImage.Image = Properties.Resources.Male;
+					else
+						pictureEmployeeImage.Image = Properties.Resources.Female;
 
-        public void LoadData(int EmployeeID)
+				}
+				else
+					pictureEmployeeImage.Load(_employeeInfo.PersonInfo.ImagePath);
+
+			}
+			catch
+			{
+
+				if (_employeeInfo.PersonInfo.Gendor == 0)
+					pictureEmployeeImage.Image = Properties.Resources.Male;
+				else
+					pictureEmployeeImage.Image = Properties.Resources.Female;
+
+
+				//pictureEmployeeImage.Image = Properties.Resources.Male;
+			}
+
+
+
+		}
+		public void LoadData(int EmployeeID)
         {
             _employeeID = EmployeeID;
 
@@ -77,22 +107,6 @@ namespace Hospital_Presentation.Employees.Controls
 
 
         }
-
-        private void _ShowEmployeeImage()
-        {
-            if (string.IsNullOrEmpty(_employeeInfo .PersonInfo.ImagePath))
-            {
-                if (_employeeInfo .PersonInfo.Gendor == 0)
-                    pictureEmployeeImage.Image = Properties.Resources.Male;
-                else
-                    pictureEmployeeImage.Image = Properties.Resources.Female;
-
-            }
-            else
-                pictureEmployeeImage.Load(_employeeInfo.PersonInfo.ImagePath);
-
-        }
-
         private void _resetDefaultValues()
         {
 
@@ -112,9 +126,11 @@ namespace Hospital_Presentation.Employees.Controls
 
         }
 
+		private void pictureEmployeeImage_Click(object sender, EventArgs e)
+		{
 
-
-    }
+		}
+	}
 }
 
    

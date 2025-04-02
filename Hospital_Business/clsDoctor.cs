@@ -1,4 +1,6 @@
 
+
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -148,13 +150,19 @@ namespace Hospital_Business
 
         public static DataTable ActiveAppointmentsForDoctor(int DoctorID)
         {
-            return clsAppointmentsDataAccess.getActiveAppointmentsForDoctor(DoctorID);
+            return clsAppointmentDataAccess.getActiveAppointmentsForDoctor(DoctorID);
 
         }
 
         public static DataTable CompletedAppointmentsForDoctor(int DoctorID)
         {
-            return clsAppointmentsDataAccess.getCompletedAppointmentsForDoctor(DoctorID);
+            return clsAppointmentDataAccess.getCompletedAppointmentsForDoctor(DoctorID);
+
+        }
+
+        public static int DoctorsCount()
+        {
+            return clsDoctorsDataAccess.DoctorsCount();
 
         }
 

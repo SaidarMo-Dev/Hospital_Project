@@ -3,27 +3,16 @@
   "WorkspaceRootPath": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4637EFD8-6FF5-4D5A-BC1F-92B1C0F785F2}|..\\HospitalDataAccess\\Hospital_DataAccess.csproj|c:\\visual projects\\hospital_project\\hospitaldataaccess\\clsemployeesdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|c:\\visual projects\\hospital_project\\hospital_presentation\\hospital_presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|solutionrelative:hospital_presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\hospital_presentation\\appointments\\frmmanageappointments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|solutionrelative:hospital_presentation\\appointments\\frmmanageappointments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\hospital_presentation\\appointments\\frmaddupdateappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|solutionrelative:hospital_presentation\\appointments\\frmaddupdateappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\hospital_presentation\\appointments\\frmaddupdateappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|solutionrelative:hospital_presentation\\appointments\\frmaddupdateappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\hospital_presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|solutionrelative:hospital_presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\hospital_presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|c:\\visual projects\\hospital_project\\hospital_presentation\\hospital_presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|solutionrelative:hospital_presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|c:\\visual projects\\hospital_project\\hospital_presentation\\hospital_presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F23A404-D031-4AA0-99CC-80C0B4058B25}|Hospital_Presentation\\Hospital_Presentation.csproj|solutionrelative:hospital_presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,88 +22,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "clsEmployeesDataAccess.cs",
-              "DocumentMoniker": "C:\\visual projects\\Hospital_Project\\HospitalDataAccess\\clsEmployeesDataAccess.cs",
-              "RelativeDocumentMoniker": "..\\HospitalDataAccess\\clsEmployeesDataAccess.cs",
-              "ToolTip": "C:\\visual projects\\Hospital_Project\\HospitalDataAccess\\clsEmployeesDataAccess.cs",
-              "RelativeToolTip": "..\\HospitalDataAccess\\clsEmployeesDataAccess.cs",
-              "ViewState": "AgIAAN0AAAAAAAAAAAAAANoAAAANAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Hospital_Presentation\\Program.cs",
+              "ToolTip": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\Program.cs*",
+              "RelativeToolTip": "Hospital_Presentation\\Program.cs*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T19:30:08.083Z",
+              "WhenOpened": "2025-03-10T14:17:21.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\frmMain.cs",
+              "RelativeDocumentMoniker": "Hospital_Presentation\\frmMain.cs",
+              "ToolTip": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\frmMain.cs",
+              "RelativeToolTip": "Hospital_Presentation\\frmMain.cs",
+              "ViewState": "AgIAAFoBAAAAAAAAAAAWwGYBAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T14:14:21.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmManageAppointments.cs [Design]",
-              "DocumentMoniker": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\Appointments\\frmManageAppointments.cs",
-              "RelativeDocumentMoniker": "Hospital_Presentation\\Appointments\\frmManageAppointments.cs",
-              "ToolTip": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\Appointments\\frmManageAppointments.cs [Design]",
-              "RelativeToolTip": "Hospital_Presentation\\Appointments\\frmManageAppointments.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:31:00.955Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmAddUpdateAppointment.cs",
-              "DocumentMoniker": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\Appointments\\frmAddUpdateAppointment.cs",
-              "RelativeDocumentMoniker": "Hospital_Presentation\\Appointments\\frmAddUpdateAppointment.cs",
-              "ToolTip": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\Appointments\\frmAddUpdateAppointment.cs",
-              "RelativeToolTip": "Hospital_Presentation\\Appointments\\frmAddUpdateAppointment.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAIAywL0AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T14:59:25.151Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmAddUpdateAppointment.cs [Design]",
-              "DocumentMoniker": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\Appointments\\frmAddUpdateAppointment.cs",
-              "RelativeDocumentMoniker": "Hospital_Presentation\\Appointments\\frmAddUpdateAppointment.cs",
-              "ToolTip": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\Appointments\\frmAddUpdateAppointment.cs [Design]",
-              "RelativeToolTip": "Hospital_Presentation\\Appointments\\frmAddUpdateAppointment.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T14:21:41.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "frmMain.cs [Design]",
               "DocumentMoniker": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\frmMain.cs",
               "RelativeDocumentMoniker": "Hospital_Presentation\\frmMain.cs",
               "ToolTip": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\frmMain.cs [Design]",
               "RelativeToolTip": "Hospital_Presentation\\frmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T17:02:28.659Z"
-            },
+              "WhenOpened": "2025-03-10T14:13:38.073Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmMain.cs",
-              "DocumentMoniker": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\frmMain.cs",
-              "RelativeDocumentMoniker": "Hospital_Presentation\\frmMain.cs",
-              "ToolTip": "C:\\visual projects\\Hospital_Project\\Hospital_Presentation\\Hospital_Presentation\\frmMain.cs",
-              "RelativeToolTip": "Hospital_Presentation\\frmMain.cs",
-              "ViewState": "AgIAAA8BAAAAAAAAAAAjwB0BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T16:03:01.818Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

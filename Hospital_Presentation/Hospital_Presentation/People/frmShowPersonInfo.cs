@@ -12,9 +12,23 @@ namespace Hospital_Presentation.People
 {
     public partial class frmShowPersonInfo : Form
     {
-        public frmShowPersonInfo()
+        public frmShowPersonInfo(int personId)
         {
+            _personId = personId;
             InitializeComponent();
         }
-    }
+
+        private int _personId ;
+
+		private void btnClose_Click(object sender, EventArgs e)
+		{
+            this.Close();
+
+		}
+
+		private void frmShowPersonInfo_Load(object sender, EventArgs e)
+		{
+            ctrlPersonInfoCard1.LoadPersonInfo(_personId);
+		}
+	}
 }

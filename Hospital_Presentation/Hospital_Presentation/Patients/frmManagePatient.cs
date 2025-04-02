@@ -119,7 +119,7 @@ namespace Hospital_Presentation.Patients
         private void tbSearchForPersonByName_TextChanged(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(tbSearchForPersonByName.Text.ToString()))
-                _Patients.DefaultView.RowFilter = _Patients.DefaultView.RowFilter = 
+                _Patients.DefaultView.RowFilter = 
                                     $"FullName LIKE '{tbSearchForPersonByName.Text.Trim()}%'";
             else
                 _Patients.DefaultView.RowFilter = "";

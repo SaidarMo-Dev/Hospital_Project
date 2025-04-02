@@ -47,11 +47,11 @@
     <Compile Include="clsDepartements.cs" />
     <Compile Include="clsDoctor.cs" />
     <Compile Include="clsEmployees.cs" />
-    <Compile Include="clsMedicalRecords.cs" />
+    <Compile Include="clsMedicalRecord.cs" />
     <Compile Include="clsPatient.cs" />
     <Compile Include="clsPayments.cs" />
     <Compile Include="clsPeople.cs" />
-    <Compile Include="clsPrescriptions.cs" />
+    <Compile Include="clsPrescription.cs" />
     <Compile Include="clsUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
