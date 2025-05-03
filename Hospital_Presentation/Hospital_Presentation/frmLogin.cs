@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Hospital_Business;
@@ -22,12 +17,12 @@ namespace Hospital_Presentation
 
 		private void frmLogin_Load(object sender, EventArgs e)
 		{
-
+			LoginProgressIndicator.Visible = false;
 		}
 
 		private void guna2TextBox1_Validating(object sender, CancelEventArgs e)
 		{
-			
+
 		}
 
 		private void tbPasssword_Validating(object sender, CancelEventArgs e)
@@ -39,34 +34,57 @@ namespace Hospital_Presentation
 				errorProvider1.SetError(tbPassword, "");
 		}
 
-		private void btnLogin_Click(object sender, EventArgs e)
+		private async void btnLogin_Click(object sender, EventArgs e)
 		{
-			if(this.ValidateChildren())
+
+			LoginProgressIndicator.Visible = true;
+			LoginProgressIndicator.Start();
+			btnLogin.Visible = false;
+
+			await Task.Delay(300);
+			if (this.ValidateChildren())
 			{
+
 				var user = clsUser.FindByUsernameAndPassword(tbUsername.Text.Trim(),
 													tbPassword.Text.Trim());
 
-				if(user == null)
+				if (user == null)
 				{
+
+					LoginProgressIndicator.Stop();
+					LoginProgressIndicator.Visible = false;
+					btnLogin.Visible = true;
+
 					MessageBox.Show("Incorrect Username Or Password Try Again!"
-						,"Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+						, "Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
 					return;
 				}
 
-				if(!user.IsActive)
+				if (!user.IsActive)
 				{
+					LoginProgressIndicator.Visible = false;
+					LoginProgressIndicator.Stop();
+					btnLogin.Visible = true;
 
 					MessageBox.Show("User Not Active. Contact your Admin!"
 						, "Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
 					return;
 				}
 
-				Global.CurrentUser= user;
+				Global.CurrentUser = user;
 
-				new frmMain(this).ShowDialog();
-				//this.Hide();
+				LoginProgressIndicator.Visible = false;
+				LoginProgressIndicator.Stop();
+				btnLogin.Visible = true;
 
-			
+				new frmMain(this).Show();
+				this.Hide();
+
+
 			}
 
 		}
@@ -90,9 +108,9 @@ namespace Hospital_Presentation
 			if (tbPassword.PasswordChar == '*')
 			{
 				tbPassword.PasswordChar = default;
-				tbPassword.IconRight = Properties.Resources.IconshowPassword; 
+				tbPassword.IconRight = Properties.Resources.IconshowPassword;
 			}
-				
+
 			else
 			{
 				tbPassword.PasswordChar = '*';

@@ -640,5 +640,95 @@
   <ItemGroup>
     <None Include="Resources\doctors_blue2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MedicalImage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-plus-solid.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MedicalImage11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-records-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-records-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prescriptions-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prescriptions-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drop-down-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\management-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\management-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointments-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MedicalImage3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change-password-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chandge-password-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-record-whitee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-record-bluee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prescriptions-white1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\take-appointment-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\take-appointment-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\call-phone-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send-email-white.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

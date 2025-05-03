@@ -214,6 +214,7 @@
 			// 
 			// ContextMenuStripUsersMenu
 			// 
+			this.ContextMenuStripUsersMenu.BackColor = System.Drawing.Color.WhiteSmoke;
 			this.ContextMenuStripUsersMenu.Font = new System.Drawing.Font("Segoe UI", 9.75F);
 			this.ContextMenuStripUsersMenu.ImageScalingSize = new System.Drawing.Size(30, 30);
 			this.ContextMenuStripUsersMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -234,16 +235,17 @@
 			this.ContextMenuStripUsersMenu.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
 			this.ContextMenuStripUsersMenu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
 			this.ContextMenuStripUsersMenu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-			this.ContextMenuStripUsersMenu.Size = new System.Drawing.Size(255, 207);
+			this.ContextMenuStripUsersMenu.Size = new System.Drawing.Size(255, 223);
 			this.ContextMenuStripUsersMenu.Opening += new System.ComponentModel.CancelEventHandler(this.ContextMenuStripUsersMenu_Opening);
 			// 
 			// ShowUserToolStripMenuItem
 			// 
-			this.ShowUserToolStripMenuItem.BackColor = System.Drawing.Color.White;
+			this.ShowUserToolStripMenuItem.AutoSize = false;
+			this.ShowUserToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
 			this.ShowUserToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.info_black;
 			this.ShowUserToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.ShowUserToolStripMenuItem.Name = "ShowUserToolStripMenuItem";
-			this.ShowUserToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
+			this.ShowUserToolStripMenuItem.Size = new System.Drawing.Size(256, 42);
 			this.ShowUserToolStripMenuItem.Text = "   Show User Info";
 			this.ShowUserToolStripMenuItem.Click += new System.EventHandler(this.ShowUserToolStripMenuItem_Click);
 			// 
@@ -254,18 +256,20 @@
 			// 
 			// addNewUserToolStripMenuItem
 			// 
-			this.addNewUserToolStripMenuItem.BackColor = System.Drawing.Color.White;
+			this.addNewUserToolStripMenuItem.AutoSize = false;
+			this.addNewUserToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
 			this.addNewUserToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.AddBlue2;
 			this.addNewUserToolStripMenuItem.Name = "addNewUserToolStripMenuItem";
-			this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
+			this.addNewUserToolStripMenuItem.Size = new System.Drawing.Size(256, 42);
 			this.addNewUserToolStripMenuItem.Text = "   Add New User";
 			this.addNewUserToolStripMenuItem.Click += new System.EventHandler(this.addNewUserToolStripMenuItem_Click);
 			// 
 			// editUserToolStripMenuItem
 			// 
-			this.editUserToolStripMenuItem.BackColor = System.Drawing.Color.White;
+			this.editUserToolStripMenuItem.AutoSize = false;
+			this.editUserToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
 			this.editUserToolStripMenuItem.Name = "editUserToolStripMenuItem";
-			this.editUserToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
+			this.editUserToolStripMenuItem.Size = new System.Drawing.Size(256, 42);
 			this.editUserToolStripMenuItem.Text = "   Edit User";
 			this.editUserToolStripMenuItem.Click += new System.EventHandler(this.editUserToolStripMenuItem_Click);
 			// 
@@ -276,10 +280,11 @@
 			// 
 			// deleteUsernToolStripMenuItem
 			// 
-			this.deleteUsernToolStripMenuItem.BackColor = System.Drawing.Color.White;
+			this.deleteUsernToolStripMenuItem.AutoSize = false;
+			this.deleteUsernToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
 			this.deleteUsernToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.cancelRed;
 			this.deleteUsernToolStripMenuItem.Name = "deleteUsernToolStripMenuItem";
-			this.deleteUsernToolStripMenuItem.Size = new System.Drawing.Size(254, 38);
+			this.deleteUsernToolStripMenuItem.Size = new System.Drawing.Size(256, 42);
 			this.deleteUsernToolStripMenuItem.Text = "   Delete User";
 			this.deleteUsernToolStripMenuItem.Click += new System.EventHandler(this.deleteUsernToolStripMenuItem_Click);
 			// 

@@ -34,23 +34,23 @@
 			this.btnClose = new Guna.UI2.WinForms.Guna2Button();
 			this.callPhoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-			this.sendEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-			this.deletePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-			this.editPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
 			this.ContextMenuStripPeopleMenu = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
-			this.showPersonInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-			this.addNewPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.dgvListPeople = new Guna.UI2.WinForms.Guna2DataGridView();
 			this.lblPeopleCount = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.cbSortBy = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.tbSearchForPersonByName = new Guna.UI2.WinForms.Guna2TextBox();
+			this.btnAddNewPerson = new Guna.UI2.WinForms.Guna2Button();
+			this.showPersonInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.addNewPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.editPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.deletePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.sendEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.ContextMenuStripPeopleMenu.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvListPeople)).BeginInit();
 			this.SuspendLayout();
@@ -72,8 +72,11 @@
 			// 
 			// callPhoneToolStripMenuItem
 			// 
+			this.callPhoneToolStripMenuItem.AutoSize = false;
+			this.callPhoneToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.callPhoneToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.call_phone_blue;
 			this.callPhoneToolStripMenuItem.Name = "callPhoneToolStripMenuItem";
-			this.callPhoneToolStripMenuItem.Size = new System.Drawing.Size(256, 36);
+			this.callPhoneToolStripMenuItem.Size = new System.Drawing.Size(256, 42);
 			this.callPhoneToolStripMenuItem.Text = "  Call Phone";
 			this.callPhoneToolStripMenuItem.Click += new System.EventHandler(this.callPhoneToolStripMenuItem_Click);
 			// 
@@ -82,41 +85,10 @@
 			this.toolStripSeparator4.Name = "toolStripSeparator4";
 			this.toolStripSeparator4.Size = new System.Drawing.Size(253, 6);
 			// 
-			// sendEmailToolStripMenuItem
-			// 
-			this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
-			this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(256, 36);
-			this.sendEmailToolStripMenuItem.Text = "  Send Email";
-			this.sendEmailToolStripMenuItem.Click += new System.EventHandler(this.sendEmailToolStripMenuItem_Click);
-			// 
 			// toolStripSeparator3
 			// 
 			this.toolStripSeparator3.Name = "toolStripSeparator3";
 			this.toolStripSeparator3.Size = new System.Drawing.Size(253, 6);
-			// 
-			// deletePersonToolStripMenuItem
-			// 
-			this.deletePersonToolStripMenuItem.Name = "deletePersonToolStripMenuItem";
-			this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(256, 36);
-			this.deletePersonToolStripMenuItem.Text = "  Delete Person";
-			this.deletePersonToolStripMenuItem.Click += new System.EventHandler(this.deletePersonToolStripMenuItem_Click);
-			// 
-			// toolStripSeparator2
-			// 
-			this.toolStripSeparator2.Name = "toolStripSeparator2";
-			this.toolStripSeparator2.Size = new System.Drawing.Size(253, 6);
-			// 
-			// editPersonToolStripMenuItem
-			// 
-			this.editPersonToolStripMenuItem.Name = "editPersonToolStripMenuItem";
-			this.editPersonToolStripMenuItem.Size = new System.Drawing.Size(256, 36);
-			this.editPersonToolStripMenuItem.Text = "  Edit Person";
-			this.editPersonToolStripMenuItem.Click += new System.EventHandler(this.editPersonToolStripMenuItem_Click);
-			// 
-			// toolStripSeparator6
-			// 
-			this.toolStripSeparator6.Name = "toolStripSeparator6";
-			this.toolStripSeparator6.Size = new System.Drawing.Size(253, 6);
 			// 
 			// toolStripSeparator5
 			// 
@@ -125,13 +97,13 @@
 			// 
 			// ContextMenuStripPeopleMenu
 			// 
+			this.ContextMenuStripPeopleMenu.BackColor = System.Drawing.Color.WhiteSmoke;
 			this.ContextMenuStripPeopleMenu.Font = new System.Drawing.Font("Segoe UI", 9.75F);
 			this.ContextMenuStripPeopleMenu.ImageScalingSize = new System.Drawing.Size(28, 28);
 			this.ContextMenuStripPeopleMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showPersonInfoToolStripMenuItem,
             this.toolStripSeparator1,
             this.addNewPersonToolStripMenuItem,
-            this.toolStripSeparator6,
             this.editPersonToolStripMenuItem,
             this.toolStripSeparator2,
             this.deletePersonToolStripMenuItem,
@@ -145,33 +117,22 @@
 			this.ContextMenuStripPeopleMenu.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
 			this.ContextMenuStripPeopleMenu.RenderStyle.ColorTable = null;
 			this.ContextMenuStripPeopleMenu.RenderStyle.RoundedEdges = true;
-			this.ContextMenuStripPeopleMenu.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+			this.ContextMenuStripPeopleMenu.RenderStyle.SelectionArrowColor = System.Drawing.Color.Gainsboro;
 			this.ContextMenuStripPeopleMenu.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
 			this.ContextMenuStripPeopleMenu.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
 			this.ContextMenuStripPeopleMenu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
 			this.ContextMenuStripPeopleMenu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-			this.ContextMenuStripPeopleMenu.Size = new System.Drawing.Size(257, 256);
-			// 
-			// showPersonInfoToolStripMenuItem
-			// 
-			this.showPersonInfoToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.info_black;
-			this.showPersonInfoToolStripMenuItem.Name = "showPersonInfoToolStripMenuItem";
-			this.showPersonInfoToolStripMenuItem.Size = new System.Drawing.Size(256, 36);
-			this.showPersonInfoToolStripMenuItem.Text = "  Show Person Info";
-			this.showPersonInfoToolStripMenuItem.Click += new System.EventHandler(this.showPersonInfoToolStripMenuItem_Click);
+			this.ContextMenuStripPeopleMenu.Size = new System.Drawing.Size(257, 286);
 			// 
 			// toolStripSeparator1
 			// 
 			this.toolStripSeparator1.Name = "toolStripSeparator1";
 			this.toolStripSeparator1.Size = new System.Drawing.Size(253, 6);
 			// 
-			// addNewPersonToolStripMenuItem
+			// toolStripSeparator2
 			// 
-			this.addNewPersonToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.AddBlue21;
-			this.addNewPersonToolStripMenuItem.Name = "addNewPersonToolStripMenuItem";
-			this.addNewPersonToolStripMenuItem.Size = new System.Drawing.Size(256, 36);
-			this.addNewPersonToolStripMenuItem.Text = "  Add New Person";
-			this.addNewPersonToolStripMenuItem.Click += new System.EventHandler(this.addNewPersonToolStripMenuItem_Click);
+			this.toolStripSeparator2.Name = "toolStripSeparator2";
+			this.toolStripSeparator2.Size = new System.Drawing.Size(253, 6);
 			// 
 			// dgvListPeople
 			// 
@@ -260,7 +221,7 @@
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F);
 			this.label4.ForeColor = System.Drawing.Color.Black;
-			this.label4.Location = new System.Drawing.Point(205, 35);
+			this.label4.Location = new System.Drawing.Point(193, 35);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(84, 28);
 			this.label4.TabIndex = 37;
@@ -277,7 +238,7 @@
 			this.cbSortBy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.cbSortBy.Font = new System.Drawing.Font("Segoe UI", 10F);
 			this.cbSortBy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-			this.cbSortBy.ItemHeight = 41;
+			this.cbSortBy.ItemHeight = 49;
 			this.cbSortBy.Items.AddRange(new object[] {
             "None",
             "Person ID",
@@ -285,7 +246,7 @@
             "Last Name"});
 			this.cbSortBy.Location = new System.Drawing.Point(295, 25);
 			this.cbSortBy.Name = "cbSortBy";
-			this.cbSortBy.Size = new System.Drawing.Size(373, 47);
+			this.cbSortBy.Size = new System.Drawing.Size(373, 55);
 			this.cbSortBy.TabIndex = 38;
 			this.cbSortBy.SelectedIndexChanged += new System.EventHandler(this.cbSortBy_SelectedIndexChanged);
 			// 
@@ -302,22 +263,92 @@
 			this.tbSearchForPersonByName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.tbSearchForPersonByName.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.tbSearchForPersonByName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbSearchForPersonByName.Location = new System.Drawing.Point(972, 25);
+			this.tbSearchForPersonByName.Location = new System.Drawing.Point(745, 25);
 			this.tbSearchForPersonByName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.tbSearchForPersonByName.Name = "tbSearchForPersonByName";
 			this.tbSearchForPersonByName.PasswordChar = '\0';
 			this.tbSearchForPersonByName.PlaceholderText = "Search by Name";
 			this.tbSearchForPersonByName.SelectedText = "";
-			this.tbSearchForPersonByName.Size = new System.Drawing.Size(408, 47);
+			this.tbSearchForPersonByName.Size = new System.Drawing.Size(408, 55);
 			this.tbSearchForPersonByName.TabIndex = 39;
 			this.tbSearchForPersonByName.TextOffset = new System.Drawing.Point(2, 0);
 			this.tbSearchForPersonByName.TextChanged += new System.EventHandler(this.tbSearchForPersonByName_TextChanged);
+			// 
+			// btnAddNewPerson
+			// 
+			this.btnAddNewPerson.BackColor = System.Drawing.Color.Transparent;
+			this.btnAddNewPerson.BorderColor = System.Drawing.Color.LightGray;
+			this.btnAddNewPerson.BorderRadius = 15;
+			this.btnAddNewPerson.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnAddNewPerson.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnAddNewPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnAddNewPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnAddNewPerson.FillColor = System.Drawing.Color.CornflowerBlue;
+			this.btnAddNewPerson.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.btnAddNewPerson.ForeColor = System.Drawing.Color.Black;
+			this.btnAddNewPerson.Location = new System.Drawing.Point(1196, 25);
+			this.btnAddNewPerson.Name = "btnAddNewPerson";
+			this.btnAddNewPerson.Size = new System.Drawing.Size(172, 55);
+			this.btnAddNewPerson.TabIndex = 40;
+			this.btnAddNewPerson.Text = "Create Person";
+			this.btnAddNewPerson.Click += new System.EventHandler(this.btnAddNewPerson_Click);
+			// 
+			// showPersonInfoToolStripMenuItem
+			// 
+			this.showPersonInfoToolStripMenuItem.AutoSize = false;
+			this.showPersonInfoToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.showPersonInfoToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.info_black;
+			this.showPersonInfoToolStripMenuItem.Name = "showPersonInfoToolStripMenuItem";
+			this.showPersonInfoToolStripMenuItem.Size = new System.Drawing.Size(256, 42);
+			this.showPersonInfoToolStripMenuItem.Text = "  Show Person Info";
+			this.showPersonInfoToolStripMenuItem.Click += new System.EventHandler(this.showPersonInfoToolStripMenuItem_Click);
+			// 
+			// addNewPersonToolStripMenuItem
+			// 
+			this.addNewPersonToolStripMenuItem.AutoSize = false;
+			this.addNewPersonToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.addNewPersonToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.AddBlue21;
+			this.addNewPersonToolStripMenuItem.Name = "addNewPersonToolStripMenuItem";
+			this.addNewPersonToolStripMenuItem.Size = new System.Drawing.Size(256, 42);
+			this.addNewPersonToolStripMenuItem.Text = "  Add New Person";
+			this.addNewPersonToolStripMenuItem.Click += new System.EventHandler(this.addNewPersonToolStripMenuItem_Click);
+			// 
+			// editPersonToolStripMenuItem
+			// 
+			this.editPersonToolStripMenuItem.AutoSize = false;
+			this.editPersonToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.editPersonToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.edit_blue;
+			this.editPersonToolStripMenuItem.Name = "editPersonToolStripMenuItem";
+			this.editPersonToolStripMenuItem.Size = new System.Drawing.Size(256, 42);
+			this.editPersonToolStripMenuItem.Text = "  Edit Person";
+			this.editPersonToolStripMenuItem.Click += new System.EventHandler(this.editPersonToolStripMenuItem_Click);
+			// 
+			// deletePersonToolStripMenuItem
+			// 
+			this.deletePersonToolStripMenuItem.AutoSize = false;
+			this.deletePersonToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.deletePersonToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.cancelRed;
+			this.deletePersonToolStripMenuItem.Name = "deletePersonToolStripMenuItem";
+			this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(256, 42);
+			this.deletePersonToolStripMenuItem.Text = "  Delete Person";
+			this.deletePersonToolStripMenuItem.Click += new System.EventHandler(this.deletePersonToolStripMenuItem_Click);
+			// 
+			// sendEmailToolStripMenuItem
+			// 
+			this.sendEmailToolStripMenuItem.AutoSize = false;
+			this.sendEmailToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.sendEmailToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.send_email_white;
+			this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
+			this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(256, 42);
+			this.sendEmailToolStripMenuItem.Text = "  Send Email";
+			this.sendEmailToolStripMenuItem.Click += new System.EventHandler(this.sendEmailToolStripMenuItem_Click);
 			// 
 			// frmManagePeople
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1393, 764);
+			this.Controls.Add(this.btnAddNewPerson);
 			this.Controls.Add(this.lblPeopleCount);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label4);
@@ -343,9 +374,7 @@
         private System.Windows.Forms.ToolStripMenuItem sendEmailToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem deletePersonToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem editPersonToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem addNewPersonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showPersonInfoToolStripMenuItem;
@@ -357,5 +386,7 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2ComboBox cbSortBy;
         private Guna.UI2.WinForms.Guna2TextBox tbSearchForPersonByName;
-    }
+		private Guna.UI2.WinForms.Guna2Button btnAddNewPerson;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+	}
 }

@@ -46,6 +46,7 @@
 			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
 			this.cbSortBy = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+			this.btnAddNewPerson = new Guna.UI2.WinForms.Guna2Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvListEmployees)).BeginInit();
 			this.ContextMenuStripPeopleMenu.SuspendLayout();
 			this.SuspendLayout();
@@ -96,13 +97,13 @@
 			this.tbSearchForEmployee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.tbSearchForEmployee.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.tbSearchForEmployee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbSearchForEmployee.Location = new System.Drawing.Point(986, 12);
+			this.tbSearchForEmployee.Location = new System.Drawing.Point(747, 14);
 			this.tbSearchForEmployee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.tbSearchForEmployee.Name = "tbSearchForEmployee";
 			this.tbSearchForEmployee.PasswordChar = '\0';
 			this.tbSearchForEmployee.PlaceholderText = "Employee Name";
 			this.tbSearchForEmployee.SelectedText = "";
-			this.tbSearchForEmployee.Size = new System.Drawing.Size(426, 47);
+			this.tbSearchForEmployee.Size = new System.Drawing.Size(426, 55);
 			this.tbSearchForEmployee.TabIndex = 46;
 			this.tbSearchForEmployee.TextOffset = new System.Drawing.Point(2, 0);
 			this.tbSearchForEmployee.TextChanged += new System.EventHandler(this.tbSearchForEmployee_TextChanged);
@@ -170,6 +171,7 @@
 			// 
 			// ContextMenuStripPeopleMenu
 			// 
+			this.ContextMenuStripPeopleMenu.BackColor = System.Drawing.Color.WhiteSmoke;
 			this.ContextMenuStripPeopleMenu.Font = new System.Drawing.Font("Segoe UI", 9.75F);
 			this.ContextMenuStripPeopleMenu.ImageScalingSize = new System.Drawing.Size(28, 28);
 			this.ContextMenuStripPeopleMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -190,14 +192,17 @@
 			this.ContextMenuStripPeopleMenu.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
 			this.ContextMenuStripPeopleMenu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
 			this.ContextMenuStripPeopleMenu.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-			this.ContextMenuStripPeopleMenu.Size = new System.Drawing.Size(285, 174);
+			this.ContextMenuStripPeopleMenu.Size = new System.Drawing.Size(285, 223);
 			this.ContextMenuStripPeopleMenu.Opening += new System.ComponentModel.CancelEventHandler(this.ContextMenuStripPeopleMenu_Opening);
 			// 
 			// showPersonInfoToolStripMenuItem
 			// 
+			this.showPersonInfoToolStripMenuItem.AutoSize = false;
+			this.showPersonInfoToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.showPersonInfoToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.info_black;
 			this.showPersonInfoToolStripMenuItem.Name = "showPersonInfoToolStripMenuItem";
 			this.showPersonInfoToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
-			this.showPersonInfoToolStripMenuItem.Size = new System.Drawing.Size(284, 38);
+			this.showPersonInfoToolStripMenuItem.Size = new System.Drawing.Size(284, 42);
 			this.showPersonInfoToolStripMenuItem.Text = "  Show Employee Info";
 			this.showPersonInfoToolStripMenuItem.Click += new System.EventHandler(this.showPersonInfoToolStripMenuItem_Click);
 			// 
@@ -208,17 +213,23 @@
 			// 
 			// addNewEmployeeToolStripMenuItem
 			// 
+			this.addNewEmployeeToolStripMenuItem.AutoSize = false;
+			this.addNewEmployeeToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.addNewEmployeeToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.AddBlue2;
 			this.addNewEmployeeToolStripMenuItem.Name = "addNewEmployeeToolStripMenuItem";
 			this.addNewEmployeeToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
-			this.addNewEmployeeToolStripMenuItem.Size = new System.Drawing.Size(284, 38);
+			this.addNewEmployeeToolStripMenuItem.Size = new System.Drawing.Size(284, 42);
 			this.addNewEmployeeToolStripMenuItem.Text = "  Add Employee";
 			this.addNewEmployeeToolStripMenuItem.Click += new System.EventHandler(this.addNewEmployeeToolStripMenuItem_Click);
 			// 
 			// editEmployeeToolStripMenuItem
 			// 
+			this.editEmployeeToolStripMenuItem.AutoSize = false;
+			this.editEmployeeToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.editEmployeeToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.edit_blue;
 			this.editEmployeeToolStripMenuItem.Name = "editEmployeeToolStripMenuItem";
 			this.editEmployeeToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
-			this.editEmployeeToolStripMenuItem.Size = new System.Drawing.Size(284, 38);
+			this.editEmployeeToolStripMenuItem.Size = new System.Drawing.Size(284, 42);
 			this.editEmployeeToolStripMenuItem.Text = "  Edit Employee";
 			this.editEmployeeToolStripMenuItem.Click += new System.EventHandler(this.editEmployeeToolStripMenuItem_Click);
 			// 
@@ -229,11 +240,13 @@
 			// 
 			// deletePersonToolStripMenuItem
 			// 
+			this.deletePersonToolStripMenuItem.AutoSize = false;
+			this.deletePersonToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
 			this.deletePersonToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.cancelRed;
 			this.deletePersonToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.deletePersonToolStripMenuItem.Name = "deletePersonToolStripMenuItem";
 			this.deletePersonToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
-			this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(284, 38);
+			this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(284, 42);
 			this.deletePersonToolStripMenuItem.Text = "  Delete Employee";
 			this.deletePersonToolStripMenuItem.Click += new System.EventHandler(this.deletePersonToolStripMenuItem_Click);
 			// 
@@ -253,7 +266,7 @@
 			this.cbSortBy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.cbSortBy.Font = new System.Drawing.Font("Segoe UI", 10F);
 			this.cbSortBy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-			this.cbSortBy.ItemHeight = 41;
+			this.cbSortBy.ItemHeight = 49;
 			this.cbSortBy.Items.AddRange(new object[] {
             "None",
             "Employee Id",
@@ -262,7 +275,7 @@
             "HireDate"});
 			this.cbSortBy.Location = new System.Drawing.Point(282, 12);
 			this.cbSortBy.Name = "cbSortBy";
-			this.cbSortBy.Size = new System.Drawing.Size(373, 47);
+			this.cbSortBy.Size = new System.Drawing.Size(410, 55);
 			this.cbSortBy.TabIndex = 45;
 			this.cbSortBy.SelectedIndexChanged += new System.EventHandler(this.cbSortBy_SelectedIndexChanged);
 			// 
@@ -282,12 +295,32 @@
 			this.btnClose.Text = "Close";
 			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
 			// 
+			// btnAddNewPerson
+			// 
+			this.btnAddNewPerson.BackColor = System.Drawing.Color.Transparent;
+			this.btnAddNewPerson.BorderColor = System.Drawing.Color.LightGray;
+			this.btnAddNewPerson.BorderRadius = 7;
+			this.btnAddNewPerson.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnAddNewPerson.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnAddNewPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnAddNewPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnAddNewPerson.FillColor = System.Drawing.Color.CornflowerBlue;
+			this.btnAddNewPerson.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.btnAddNewPerson.ForeColor = System.Drawing.Color.Black;
+			this.btnAddNewPerson.Location = new System.Drawing.Point(1208, 14);
+			this.btnAddNewPerson.Name = "btnAddNewPerson";
+			this.btnAddNewPerson.Size = new System.Drawing.Size(204, 55);
+			this.btnAddNewPerson.TabIndex = 47;
+			this.btnAddNewPerson.Text = "Create Employee";
+			this.btnAddNewPerson.Click += new System.EventHandler(this.btnAddNewPerson_Click);
+			// 
 			// frmManageEmployees
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CancelButton = this.btnClose;
 			this.ClientSize = new System.Drawing.Size(1424, 746);
+			this.Controls.Add(this.btnAddNewPerson);
 			this.Controls.Add(this.lblEmployeesCountCount);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label4);
@@ -323,5 +356,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private Guna.UI2.WinForms.Guna2ComboBox cbSortBy;
         private Guna.UI2.WinForms.Guna2Button btnClose;
-    }
+		private Guna.UI2.WinForms.Guna2Button btnAddNewPerson;
+	}
 }

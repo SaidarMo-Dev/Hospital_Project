@@ -158,19 +158,20 @@
 			this.btnNext.FillColor = System.Drawing.Color.MediumSeaGreen;
 			this.btnNext.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnNext.ForeColor = System.Drawing.Color.White;
-			this.btnNext.Location = new System.Drawing.Point(842, 598);
+			this.btnNext.Location = new System.Drawing.Point(786, 598);
 			this.btnNext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btnNext.Name = "btnNext";
 			this.btnNext.Size = new System.Drawing.Size(184, 50);
 			this.btnNext.TabIndex = 2;
 			this.btnNext.Text = "Next";
+			this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
 			// 
 			// ctrlPersonInfoCardWithFilter1
 			// 
 			this.ctrlPersonInfoCardWithFilter1.BackColor = System.Drawing.Color.WhiteSmoke;
-			this.ctrlPersonInfoCardWithFilter1.Location = new System.Drawing.Point(21, 6);
+			this.ctrlPersonInfoCardWithFilter1.Location = new System.Drawing.Point(45, 6);
 			this.ctrlPersonInfoCardWithFilter1.Name = "ctrlPersonInfoCardWithFilter1";
-			this.ctrlPersonInfoCardWithFilter1.Size = new System.Drawing.Size(1009, 584);
+			this.ctrlPersonInfoCardWithFilter1.Size = new System.Drawing.Size(938, 584);
 			this.ctrlPersonInfoCardWithFilter1.TabIndex = 0;
 			this.ctrlPersonInfoCardWithFilter1.OnPersonSelected += new System.EventHandler<Hospital_Presentation.People.Controls.ctrlPersonInfoCardWithFilter.PersonInfoEventArgs>(this.ctrlPersonInfoCardWithFilter1_OnPersonSelected);
 			// 
@@ -368,6 +369,7 @@
 			this.Controls.Add(this.TabControlEmployeeInfo);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Name = "frmAddUpdateDoctor";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "Add New Doctor";
 			this.Load += new System.EventHandler(this.frmAddUpdateDoctor_Load);
 			((System.ComponentModel.ISupportInitialize)(this.epValidations)).EndInit();

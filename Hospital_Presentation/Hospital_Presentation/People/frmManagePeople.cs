@@ -207,5 +207,13 @@ namespace Hospital_Presentation.People
 			_dtListPeople.DefaultView.RowFilter = "FirstName LIKE '" + tbSearchForPersonByName.Text.Trim() + "%'";
 
 		}
+
+		private void btnAddNewPerson_Click(object sender, EventArgs e)
+		{
+			new frmAddUpdatePerson().ShowDialog();
+
+			_LoadPeopleInfo();
+
+		}
 	}
 }

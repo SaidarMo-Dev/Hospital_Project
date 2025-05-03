@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 using Hospital_Presentation.Appointments;
-using Hospital_Presentation.Dashboard;
 using Hospital_Presentation.Doctors;
 using Hospital_Presentation.Employees;
 using Hospital_Presentation.GlobalClasses;
@@ -45,10 +44,7 @@ namespace Hospital_Presentation
 			panelPatientsSubMenu.Visible = false;
 			panelUsersSubMenu.Visible = false;
 			panelAppointmentSubMenu.Visible = false;
-
-
-			_ShowChildForm(new frmDasboard());
-
+			panelLoggedUser.Visible = false;
 
 
 		}
@@ -70,6 +66,9 @@ namespace Hospital_Presentation
 				panelUsersSubMenu.Visible = false;
 
 			if (panelAppointmentSubMenu.Visible)
+				panelAppointmentSubMenu.Visible = false;
+
+			if (panelLoggedUser.Visible)
 				panelAppointmentSubMenu.Visible = false;
 
 		}
@@ -94,7 +93,6 @@ namespace Hospital_Presentation
 		{
 			_HideSubMenus();
 
-			btnDashboard.Visible = false;
 			btnPeopleMenu.Visible = false;
 			btnEmployeesMenu.Visible = false;
 			btnDoctorsMenu.Visible = false;
@@ -109,7 +107,6 @@ namespace Hospital_Presentation
 		private void _ShowAllMenus()
 		{
 
-			btnDashboard.Visible = true;
 			btnPeopleMenu.Visible = true;
 			btnEmployeesMenu.Visible = true;
 			btnDoctorsMenu.Visible = true;
@@ -121,28 +118,6 @@ namespace Hospital_Presentation
 			btnHelp.Visible = true;
 		}
 
-		Form _ActiveForm = null;
-
-		private void _ShowChildForm(Form childForm)
-		{
-			if (_ActiveForm != null)
-				_ActiveForm.Close();
-
-
-			_ActiveForm = childForm;
-
-
-			childForm.TopLevel = false;
-			childForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			childForm.Dock = DockStyle.Fill;
-
-			panelContainer.Controls.Add(childForm);
-
-			childForm.Show();
-
-
-
-		}
 
 
 		private void guna2Button1_Click(object sender, EventArgs e)
@@ -257,7 +232,7 @@ namespace Hospital_Presentation
 		private void btnDashboard_Click(object sender, EventArgs e)
 		{
 
-			_ShowChildForm(new frmDasboard());
+			//_ShowChildForm(new frmDasboard());
 
 		}
 
@@ -357,7 +332,7 @@ namespace Hospital_Presentation
 		{
 
 			this.Close();
-			//_LoginForm.Show();
+			_LoginForm.Show();
 
 		}
 
@@ -384,8 +359,36 @@ namespace Hospital_Presentation
 
 		private void btnLogout_Click(object sender, EventArgs e)
 		{
+			_ShowsubMenu(panelLoggedUser);
+
+		}
+
+		private void panelContainer_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void miniToolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+		{
+
+		}
+
+		private void btnLogout_Click_1(object sender, EventArgs e)
+		{
 			this.Close();
-			_LoginForm.ShowDialog();
+			_LoginForm.Show();
+		}
+
+		private void btnShowInfo_Click(object sender, EventArgs e)
+		{
+			new frmShowUserInfo(Global.CurrentUser.UserID)
+				.ShowDialog();
+		}
+
+		private void guna2Button2_Click(object sender, EventArgs e)
+		{
+			new frmChangePassword(Global.CurrentUser.UserID)
+				.ShowDialog();
 
 		}
 	}

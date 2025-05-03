@@ -38,19 +38,19 @@
 			this.cbSortBy = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.dgvListAppointments = new Guna.UI2.WinForms.Guna2DataGridView();
 			this.cmsAppointmentMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-			this.showAppointmentInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+			this.btnFind = new Guna.UI2.WinForms.Guna2Button();
+			this.showAppointmentInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.takeAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.MedicalRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.prescriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
 			this.addNewAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.editAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
 			this.cancelAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
 			this.deleteAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.btnFind = new Guna.UI2.WinForms.Guna2Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvListAppointments)).BeginInit();
 			this.cmsAppointmentMenu.SuspendLayout();
 			this.SuspendLayout();
@@ -189,90 +189,28 @@
             this.toolStripSeparator8,
             this.deleteAppointmentToolStripMenuItem});
 			this.cmsAppointmentMenu.Name = "cmsAppointmentMenu";
-			this.cmsAppointmentMenu.Size = new System.Drawing.Size(292, 268);
+			this.cmsAppointmentMenu.Size = new System.Drawing.Size(292, 280);
 			this.cmsAppointmentMenu.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
-			// 
-			// showAppointmentInfoToolStripMenuItem
-			// 
-			this.showAppointmentInfoToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.info_black;
-			this.showAppointmentInfoToolStripMenuItem.Name = "showAppointmentInfoToolStripMenuItem";
-			this.showAppointmentInfoToolStripMenuItem.Size = new System.Drawing.Size(291, 40);
-			this.showAppointmentInfoToolStripMenuItem.Text = "Show Appointment info";
-			this.showAppointmentInfoToolStripMenuItem.Click += new System.EventHandler(this.showAppointmentInfoToolStripMenuItem_Click);
 			// 
 			// toolStripSeparator5
 			// 
 			this.toolStripSeparator5.Name = "toolStripSeparator5";
 			this.toolStripSeparator5.Size = new System.Drawing.Size(288, 6);
 			// 
-			// takeAppointmentToolStripMenuItem
-			// 
-			this.takeAppointmentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MedicalRecordToolStripMenuItem,
-            this.prescriptionToolStripMenuItem});
-			this.takeAppointmentToolStripMenuItem.Name = "takeAppointmentToolStripMenuItem";
-			this.takeAppointmentToolStripMenuItem.Size = new System.Drawing.Size(291, 40);
-			this.takeAppointmentToolStripMenuItem.Text = "Take Appointment";
-			this.takeAppointmentToolStripMenuItem.Click += new System.EventHandler(this.takeAppointmentToolStripMenuItem1_Click);
-			// 
-			// MedicalRecordToolStripMenuItem
-			// 
-			this.MedicalRecordToolStripMenuItem.Name = "MedicalRecordToolStripMenuItem";
-			this.MedicalRecordToolStripMenuItem.Size = new System.Drawing.Size(235, 34);
-			this.MedicalRecordToolStripMenuItem.Text = "Medical Record";
-			this.MedicalRecordToolStripMenuItem.Click += new System.EventHandler(this.MedicalRecordToolStripMenuItem_Click);
-			// 
-			// prescriptionToolStripMenuItem
-			// 
-			this.prescriptionToolStripMenuItem.Name = "prescriptionToolStripMenuItem";
-			this.prescriptionToolStripMenuItem.Size = new System.Drawing.Size(235, 34);
-			this.prescriptionToolStripMenuItem.Text = "Prescription";
-			this.prescriptionToolStripMenuItem.Click += new System.EventHandler(this.prescriptionToolStripMenuItem_Click_1);
-			// 
 			// toolStripSeparator6
 			// 
 			this.toolStripSeparator6.Name = "toolStripSeparator6";
 			this.toolStripSeparator6.Size = new System.Drawing.Size(288, 6);
-			// 
-			// addNewAppointmentToolStripMenuItem
-			// 
-			this.addNewAppointmentToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.AddBlue2;
-			this.addNewAppointmentToolStripMenuItem.Name = "addNewAppointmentToolStripMenuItem";
-			this.addNewAppointmentToolStripMenuItem.Size = new System.Drawing.Size(291, 40);
-			this.addNewAppointmentToolStripMenuItem.Text = "Add New Appointment";
-			this.addNewAppointmentToolStripMenuItem.Click += new System.EventHandler(this.addNewAppointmentToolStripMenuItem_Click_1);
-			// 
-			// editAppointmentToolStripMenuItem
-			// 
-			this.editAppointmentToolStripMenuItem.Name = "editAppointmentToolStripMenuItem";
-			this.editAppointmentToolStripMenuItem.Size = new System.Drawing.Size(291, 40);
-			this.editAppointmentToolStripMenuItem.Text = "Edit Appointment";
-			this.editAppointmentToolStripMenuItem.Click += new System.EventHandler(this.editAppointmentToolStripMenuItem_Click_1);
 			// 
 			// toolStripSeparator7
 			// 
 			this.toolStripSeparator7.Name = "toolStripSeparator7";
 			this.toolStripSeparator7.Size = new System.Drawing.Size(288, 6);
 			// 
-			// cancelAppointmentToolStripMenuItem
-			// 
-			this.cancelAppointmentToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.cancelRed;
-			this.cancelAppointmentToolStripMenuItem.Name = "cancelAppointmentToolStripMenuItem";
-			this.cancelAppointmentToolStripMenuItem.Size = new System.Drawing.Size(291, 40);
-			this.cancelAppointmentToolStripMenuItem.Text = "Cancel Appointment";
-			this.cancelAppointmentToolStripMenuItem.Click += new System.EventHandler(this.cancelAppointmentToolStripMenuItem1_Click);
-			// 
 			// toolStripSeparator8
 			// 
 			this.toolStripSeparator8.Name = "toolStripSeparator8";
 			this.toolStripSeparator8.Size = new System.Drawing.Size(288, 6);
-			// 
-			// deleteAppointmentToolStripMenuItem
-			// 
-			this.deleteAppointmentToolStripMenuItem.Name = "deleteAppointmentToolStripMenuItem";
-			this.deleteAppointmentToolStripMenuItem.Size = new System.Drawing.Size(291, 40);
-			this.deleteAppointmentToolStripMenuItem.Text = "Delete Appointment";
-			this.deleteAppointmentToolStripMenuItem.Click += new System.EventHandler(this.deleteAppointmentToolStripMenuItem1_Click);
 			// 
 			// btnFind
 			// 
@@ -291,6 +229,84 @@
 			this.btnFind.Text = "Create Appointment";
 			this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
 			// 
+			// showAppointmentInfoToolStripMenuItem
+			// 
+			this.showAppointmentInfoToolStripMenuItem.AutoSize = false;
+			this.showAppointmentInfoToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.info_black;
+			this.showAppointmentInfoToolStripMenuItem.Name = "showAppointmentInfoToolStripMenuItem";
+			this.showAppointmentInfoToolStripMenuItem.Size = new System.Drawing.Size(291, 42);
+			this.showAppointmentInfoToolStripMenuItem.Text = "Show Appointment info";
+			this.showAppointmentInfoToolStripMenuItem.Click += new System.EventHandler(this.showAppointmentInfoToolStripMenuItem_Click);
+			// 
+			// takeAppointmentToolStripMenuItem
+			// 
+			this.takeAppointmentToolStripMenuItem.AutoSize = false;
+			this.takeAppointmentToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+			this.takeAppointmentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MedicalRecordToolStripMenuItem,
+            this.prescriptionToolStripMenuItem});
+			this.takeAppointmentToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.take_appointment_blue;
+			this.takeAppointmentToolStripMenuItem.Name = "takeAppointmentToolStripMenuItem";
+			this.takeAppointmentToolStripMenuItem.Size = new System.Drawing.Size(291, 42);
+			this.takeAppointmentToolStripMenuItem.Text = "Take Appointment";
+			this.takeAppointmentToolStripMenuItem.Click += new System.EventHandler(this.takeAppointmentToolStripMenuItem1_Click);
+			// 
+			// MedicalRecordToolStripMenuItem
+			// 
+			this.MedicalRecordToolStripMenuItem.AutoSize = false;
+			this.MedicalRecordToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+			this.MedicalRecordToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.medical_record_bluee;
+			this.MedicalRecordToolStripMenuItem.Name = "MedicalRecordToolStripMenuItem";
+			this.MedicalRecordToolStripMenuItem.Size = new System.Drawing.Size(270, 42);
+			this.MedicalRecordToolStripMenuItem.Text = "Medical Record";
+			this.MedicalRecordToolStripMenuItem.Click += new System.EventHandler(this.MedicalRecordToolStripMenuItem_Click);
+			// 
+			// prescriptionToolStripMenuItem
+			// 
+			this.prescriptionToolStripMenuItem.AutoSize = false;
+			this.prescriptionToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+			this.prescriptionToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.prescriptions_white1;
+			this.prescriptionToolStripMenuItem.Name = "prescriptionToolStripMenuItem";
+			this.prescriptionToolStripMenuItem.Size = new System.Drawing.Size(270, 42);
+			this.prescriptionToolStripMenuItem.Text = "Prescription";
+			this.prescriptionToolStripMenuItem.Click += new System.EventHandler(this.prescriptionToolStripMenuItem_Click_1);
+			// 
+			// addNewAppointmentToolStripMenuItem
+			// 
+			this.addNewAppointmentToolStripMenuItem.AutoSize = false;
+			this.addNewAppointmentToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.AddBlue2;
+			this.addNewAppointmentToolStripMenuItem.Name = "addNewAppointmentToolStripMenuItem";
+			this.addNewAppointmentToolStripMenuItem.Size = new System.Drawing.Size(291, 42);
+			this.addNewAppointmentToolStripMenuItem.Text = "Add New Appointment";
+			this.addNewAppointmentToolStripMenuItem.Click += new System.EventHandler(this.addNewAppointmentToolStripMenuItem_Click_1);
+			// 
+			// editAppointmentToolStripMenuItem
+			// 
+			this.editAppointmentToolStripMenuItem.AutoSize = false;
+			this.editAppointmentToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.edit_blue;
+			this.editAppointmentToolStripMenuItem.Name = "editAppointmentToolStripMenuItem";
+			this.editAppointmentToolStripMenuItem.Size = new System.Drawing.Size(291, 42);
+			this.editAppointmentToolStripMenuItem.Text = "Edit Appointment";
+			this.editAppointmentToolStripMenuItem.Click += new System.EventHandler(this.editAppointmentToolStripMenuItem_Click_1);
+			// 
+			// cancelAppointmentToolStripMenuItem
+			// 
+			this.cancelAppointmentToolStripMenuItem.AutoSize = false;
+			this.cancelAppointmentToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.cancel_blue;
+			this.cancelAppointmentToolStripMenuItem.Name = "cancelAppointmentToolStripMenuItem";
+			this.cancelAppointmentToolStripMenuItem.Size = new System.Drawing.Size(291, 42);
+			this.cancelAppointmentToolStripMenuItem.Text = "Cancel Appointment";
+			this.cancelAppointmentToolStripMenuItem.Click += new System.EventHandler(this.cancelAppointmentToolStripMenuItem1_Click);
+			// 
+			// deleteAppointmentToolStripMenuItem
+			// 
+			this.deleteAppointmentToolStripMenuItem.AutoSize = false;
+			this.deleteAppointmentToolStripMenuItem.Image = global::Hospital_Presentation.Properties.Resources.cancelRed;
+			this.deleteAppointmentToolStripMenuItem.Name = "deleteAppointmentToolStripMenuItem";
+			this.deleteAppointmentToolStripMenuItem.Size = new System.Drawing.Size(291, 42);
+			this.deleteAppointmentToolStripMenuItem.Text = "Delete Appointment";
+			this.deleteAppointmentToolStripMenuItem.Click += new System.EventHandler(this.deleteAppointmentToolStripMenuItem1_Click);
+			// 
 			// frmManageAppointments
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -305,7 +321,6 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
 			this.Name = "frmManageAppointments";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "3";
 			this.Load += new System.EventHandler(this.frmManageAppointments_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dgvListAppointments)).EndInit();
 			this.cmsAppointmentMenu.ResumeLayout(false);
