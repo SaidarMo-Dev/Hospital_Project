@@ -19,6 +19,7 @@ and staff data.
 - **.NET Framework 4.8**
 - **C#**
 - **ADO.NET**
+- **Transact-Sql**
 - **Microsoft SQL Server**
 - **Windows Forms (WinForms)**
 - **Guna UI**
@@ -28,10 +29,10 @@ and staff data.
 ## ⚙️ How to Run
 
 1. Clone the repository
-   git clone https://github.com/yourusername/HospitalManagementSystem.git
+   git clone https://github.com/SaidarMo-Dev/Hospital_Project.git
    
-2. Open the solution in Visual Studio
+3. Open the solution in Visual Studio
 
-3. Set up SQL Server Restore DataBase In (DataBase) Folder and update your connection string
+5. Set up SQL Server Restore DataBase In (DataBase) Folder and update your connection string
 
-4. Run the application
+6. Run the application
