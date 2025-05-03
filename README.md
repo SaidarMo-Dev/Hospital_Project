@@ -1,6 +1,6 @@
 # Hospital Management System
 
-A desktop-based Hospital Management System built with **.NET Framework (C#)**, **ADO.NET**, and **SQL Server**,
+A desktop-based Hospital Management System built with **.NET Framework (C#)**, **ADO.NET**, **Transact-SQL**, and **SQL Server**,
 designed to streamline operations in a hospital or clinic by efficiently managing patients, doctors, appointments,
 and staff data.
 
